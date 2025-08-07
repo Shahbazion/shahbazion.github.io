@@ -3,6 +3,38 @@
   "nav.about": "Über mich",
   "nav.projects": "Projekte",
   "nav.contact": "Kontakt",
+
   "home.welcome": "Hallo! Ich bin Saeed AliShahbazi.",
-  "home.description": "Ich bin ein Backend-Entwickler mit Fokus auf JavaScript, Node.js und Python. Für mich bedeutet Programmieren mehr als nur Code zu schreiben; es geht darum, präzise, wartbare und zuverlässige Lösungen für reale Herausforderungen zu schaffen.\n\nIch lege großen Wert darauf, sauberen, strukturierten und gut dokumentierten Code zu schreiben. Ich nutze Git und GitHub professionell, mit sinnvollen Commits und einer organisierten Branch-Struktur.\n\nIch entwerfe Systeme, die skalierbar, wartbar und verständlich sind. Zu meinen Fähigkeiten gehören die API-Entwicklung, Datenbankverwaltung und professionelle Dokumentation.\n\nMein Ziel ist es, ins Ausland zu migrieren und dort eine Arbeitserlaubnis zu erhalten, um in einem professionellen Umfeld zu wachsen und innovative Chancen zu verfolgen.\n\nIch schätze Kooperationen, die auf Qualität, Transparenz und gegenseitigem Respekt basieren."
+  "home.description": "Ich bin ein Backend-Entwickler mit Fokus auf JavaScript, Node.js und Python. Für mich bedeutet Programmieren mehr als nur Code zu schreiben – es geht darum, präzise, wartbare und zuverlässige Lösungen für reale Herausforderungen zu schaffen.\n\nIch lege großen Wert auf sauberen, strukturierten und gut dokumentierten Code. Ich arbeite professionell mit Git und GitHub, mache sinnvolle Commits und halte meine Branches organisiert.\n\nIch entwerfe Systeme, die skalierbar, wartbar und verständlich sind. Zu meinen Fähigkeiten gehören API-Entwicklung, Datenbankmanagement und professionelle Dokumentation.\n\nMein Ziel ist es, auszuwandern und eine berufliche Perspektive im Ausland aufzubauen – in einem Umfeld, das Wachstum ermöglicht und Innovation fördert.\n\nIch schätze Zusammenarbeit, die auf Qualität, Transparenz und gegenseitigem Respekt basiert.",
+
+  "about.title": "Über mich",
+  "about.name": "Saeed AliShahbazi",
+  "about.roles": "Backend-Entwickler | Dokumentationsliebhaber | Suchender nach Meisterschaft und Wachstum",
+  "about.birthdate": "Geburtsdatum: 10. November 1998",
+
+  "about.greeting": "Hallo. Ich bin nicht nur ein Entwickler, sondern ein Suchender, der die tiefen Strukturen von Systemen, Bewusstsein und Kreativität erforscht.",
+  "about.childhood": "Schon als Kind war ich fasziniert von den unsichtbaren Mustern, die die Realität formen – ob in Computern oder in der menschlichen Psyche. Diese Neugier führte mich sowohl zur Technologie als auch zur inneren Wahrheit.",
+
+  "about.learningPath": "Mein Lernweg",
+  "about.learningDesc": "Meine Reise begann mit Backend-Technologien – zuerst mit Node.js, später auch mit Python. Ich lernte, wie man APIs entwickelt, Datenbanken verwaltet und automatisierte Workflows erstellt – und wie man Code schreibt, der robust, lesbar und testbar ist.",
+  "about.tools": "Ich beherrsche Tools wie Git, GitHub, Postman, VS Code, Linux, REST-APIs und Paketmanager wie npm, yarn und pip. Saubere Commits, sinnvolle Branches und präzise Dokumentation gehören zu meiner professionellen Haltung.",
+  "about.pythonDesc": "Python ist meine zweite starke Sprache. Ich nutze es für Automatisierung, Backend-Prozesse und bald auch für Datenverarbeitung, ETL und Skripterstellung.",
+
+  "about.beliefsTitle": "Werte und Überzeugungen",
+  "about.beliefsDesc": "Softwareentwicklung ist für mich nicht nur ein Beruf, sondern ein Weg zu Klarheit, Disziplin und Integrität. Ich betrachte Code als lebendiges System – er braucht Pflege, Verbindung und bewusstes Design. Ich glaube an Wachstum durch Struktur, innere Arbeit und kontinuierliches Reflektieren – im Code wie im Selbst.",
+
+  "about.devMeans": "Was bedeutet Entwicklung für mich?",
+  "about.commitment": "Ich bin verpflichtet, sauberen, modularen und skalierbaren Code zu schreiben, der sowohl die Bedürfnisse der Nutzer erfüllt als auch langfristig wartbar ist.",
+  "about.communication": "Für mich ist klare, respektvolle und lösungsorientierte Kommunikation essenziell.",
+  "about.responsibility": "Ich übernehme Verantwortung für die Systeme, die ich baue, und verbessere sie kontinuierlich mit Intention und Achtsamkeit.",
+
+  "about.goalsTitle": "Ziele und Zukunftsvision",
+  "about.goalsDesc": "Ich strebe eine ortsunabhängige, sinnvolle Karriere an. Ich suche nach Freelance- oder Remote-Möglichkeiten, die auf Innovation, Qualität und ethischer Ausrichtung basieren.",
+  "about.environmentDesc": "Ich arbeite gerne in Teams, die kreative Autonomie, strukturiertes Lernen und psychologische Sicherheit wertschätzen – besonders in multikulturellen, bewussten Umfeldern.",
+
+  "about.whyWorkWithMeTitle": "Warum mit mir arbeiten?",
+  "about.whyWorkWithMe1": "Ich kombiniere technische Präzision mit philosophischer Tiefe und psychologischer Klarheit.",
+  "about.whyWorkWithMe2": "Ich bringe sowohl fokussierte Selbstständigkeit als auch Bereitschaft zur offenen Zusammenarbeit mit.",
+  "about.whyWorkWithMe3": "Ich liefere hochwertige, zukunftsfähige Lösungen mit Liebe zum Detail.",
+  "about.whyWorkWithMe4": "Ich lege Wert auf sinnvolle Arbeit, gemeinsames Wachstum und authentische Resultate."
 }
