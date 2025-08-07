@@ -5,33 +5,27 @@
   "nav.contact": "Contact",
 
   "home.welcome": "Hello! I am Saeed AliShahbazi.",
-  "home.description": "I am a backend developer focusing on JavaScript, Node.js, and Python. For me, programming goes beyond writing code; it’s about creating precise, maintainable, and reliable solutions for real-world challenges.\n\nI have always prioritized writing clean, structured, and well-documented code. I use Git and GitHub professionally, committing meaningful changes and maintaining organized branches.\n\nI design systems that are scalable, maintainable, and understandable. My skills include API development, database management, and professional documentation.\n\nMy goal is to migrate and establish work residency abroad, seeking a professional environment where I can grow and pursue innovative opportunities.\n\nI value collaborations based on quality, transparency, and mutual respect.",
+  "home.description": "I am a backend & frontend developer focusing on JavaScript, Node.js, and Python. For me, programming goes beyond writing code; it’s about creating precise, maintainable, and reliable solutions for real-world challenges.\n\nI have always prioritized writing clean, structured, and well-documented code. I use Git and GitHub professionally, committing meaningful changes and maintaining organized branches.\n\nI design systems that are scalable, maintainable, and understandable. My skills include API development, database management, and professional documentation.\n\nMy goal is to migrate and establish work residency abroad, seeking a professional environment where I can grow and pursue innovative opportunities.\n\nI value collaborations based on quality, transparency, and mutual respect.",
 
   "about.title": "About Me",
   "about.name": "Saeed AliShahbazi",
-  "about.roles": "Backend Developer | Documentation Enthusiast | Seeker of Mastery",
+  "about.roles": "Backend & Frontend Developer | Documentation Enthusiast | Seeker of Mastery",
   "about.birthdate": "Born: November 10, 1998",
-
   "about.greeting": "Greetings. I am not just a developer, but a seeker—one who explores the deep architecture of systems, consciousness, and creativity.",
   "about.childhood": "From a young age, I was drawn to the invisible frameworks that govern reality—whether they were logical systems in computers or archetypal patterns within the psyche. I pursued both technology and inner truth with the same curiosity.",
-  
   "about.learningPath": "My Learning Path",
   "about.learningDesc": "My journey began with a deep dive into backend technologies, starting with Node.js and extending into Python. I learned not only how to build APIs, work with databases, and automate workflows—but also how to write sustainable, readable, and testable code.",
   "about.tools": "I am proficient in Git, GitHub, Postman, VS Code, Linux, REST APIs, and package managers like npm/yarn/pip. I prioritize clean commits, meaningful branching, and precise documentation as part of my developer ethic.",
   "about.pythonDesc": "Python has become a powerful second language in my stack. I use it for automation, backend workflows, and soon, data-related tasks (ETL pipelines, scripting, and data transformation).",
-
   "about.beliefsTitle": "Beliefs & Values",
   "about.beliefsDesc": "To me, development is not just a career—it’s a path of clarity, discipline, and integration. I treat codebases like living organisms: they require care, communication, and conscious structure. I believe in growth through structure, inner work, and continual refactoring—of both code and self.",
-
   "about.devMeans": "What Development Means to Me",
   "about.commitment": "I commit to writing clean, modular, and scalable code that aligns with both user needs and long-term maintainability.",
   "about.communication": "I value communication that is clear, respectful, and oriented toward shared solutions.",
   "about.responsibility": "I take ownership of the systems I design and continuously improve them with intention and awareness.",
-
   "about.goalsTitle": "Vision & Future Goals",
   "about.goalsDesc": "My goal is to build a location-independent, spiritually grounded career. I seek freelance collaborations and remote positions that align with innovation, quality, and ethical resonance.",
   "about.environmentDesc": "I aspire to join teams where creative autonomy, structured learning, and psychological safety are the norm. I am especially interested in cross-cultural environments and systems that support conscious work.",
-
   "about.whyWorkWithMeTitle": "Why Work With Me?",
   "about.whyWorkWithMe1": "I merge technical precision with philosophical depth and psychological clarity.",
   "about.whyWorkWithMe2": "I bring both independent focus and collaborative openness to every project.",
@@ -39,17 +33,20 @@
   "about.whyWorkWithMe4": "I care deeply about meaningful work, mutual growth, and aligned outcomes.",
 
   "projects.title": "My Projects",
-  "projects.description": "Here are some of the projects I have worked on, demonstrating my skills in backend development and system design.",
+  "projects.intro": "A selection of meaningful projects I've developed—showcasing both backend and frontend capabilities, and real client work.",
 
-  "projects.project1.title": "Freelance Dashboard",
-  "projects.project1.description": "A web dashboard to manage freelance jobs, track earnings, and optimize client communication using Node.js and MongoDB.",
-  "projects.project1.tech": "Tech: Node.js, Express, MongoDB, React",
-  "projects.project1.github": "View on GitHub",
+  "projects.project1.title": "dr-rezvani-vet.ir",
+  "projects.project1.description": "Design and development of a complete frontend & backend solution for a veterinary dental clinic. Responsive layout, multilingual support, appointment booking form, and a clean UI matching the clinic’s branding.",
+  "projects.project1.link": "Visit Website",
 
-  "projects.project2.title": "API Documentation Generator",
-  "projects.project2.description": "A tool to automatically generate API documentation from code annotations, improving maintainability and developer experience.",
-  "projects.project2.tech": "Tech: Python, Sphinx, Markdown",
-  "projects.project2.github": "View on GitHub",
+  "projects.project2.title": "Real-Time Chat API (Node.js & WebSockets)",
+  "projects.project2.description": "Developed a scalable chat backend using WebSocket, handling user presence, messaging persistence, and RESTful endpoints for real-time interaction.",
+
+  "projects.project3.title": "Data Automation Scripts (Python)",
+  "projects.project3.description": "A suite of Python scripts automating CSV data processing, ETL tasks, and deployment pipelines—reducing manual workload and increasing reliability.",
+
+  "projects.project4.title": "Interactive Dashboard (Frontend)",
+  "projects.project4.description": "Built a dynamic, responsive dashboard using modern JavaScript frameworks. Integrated API data, charts, and interactive UI elements for business insights.",
 
   "contact.description": "Feel free to reach out to discuss projects, collaborations, or any questions.",
   "contact.form.name": "Name",

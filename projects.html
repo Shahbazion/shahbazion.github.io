@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title data-i18n="projects.title">Projects | Saeed AliShahbazi</title>
-  <meta name="description" content="Showcase of projects by Saeed AliShahbazi, backend developer with expertise in Node.js, Python, and JavaScript." />
+  <meta name="description" content="Showcase of projects by Saeed AliShahbazi, backend & frontend developer with expertise in Node.js, Python, JavaScript." />
   <meta name="author" content="Saeed AliShahbazi" />
 
   <link rel="icon" href="images/icon.png" type="image/png" sizes="32x32" />
-  <link rel="stylesheet" href="styles/projects.css" />
+  <link rel="stylesheet" href="styles/index.css" />
   <script defer src="js/f18i.js"></script>
 </head>
 <body>
@@ -18,7 +18,6 @@
     <a href="index.html" aria-label="Homepage" class="logo-link">
       <img src="images/logo.png" alt="Saeed AliShahbazi Logo" id="logo" loading="lazy" />
     </a>
-
     <nav role="navigation" aria-label="Main menu" class="main-nav">
       <ul>
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
@@ -27,7 +26,6 @@
         <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
-
     <nav role="navigation" aria-label="Language switcher" class="lang-switcher">
       <button data-lang="en" aria-pressed="true" class="lang-btn" lang="en">EN</button>
       <button data-lang="fa" aria-pressed="false" class="lang-btn" lang="fa">FA</button>
@@ -36,38 +34,51 @@
     </nav>
   </header>
 
-  <main id="content" role="main" tabindex="-1" class="projects-container">
+  <main id="content" role="main" tabindex="-1">
     <h1 data-i18n="projects.title">My Projects</h1>
     <p data-i18n="projects.intro">
-      Here are some of the projects I have worked on, demonstrating my skills in backend development and system design.
+      A selection of meaningful projects I've developed—showcasing both backend and frontend capabilities, and real client work.
     </p>
 
     <section class="projects-list" aria-label="List of projects">
+
       <article class="project-card" tabindex="0">
-        <h2 data-i18n="projects.project1.title">API Management System</h2>
-        <p data-i18n="projects.project1.description">
-          A RESTful service developed using Node.js and Express to manage dynamic data, focusing on scalability and security.
+        <figure>
+          <img src="images/dr-rezvani-logo.png" alt="Dr. Rezvani Vet Logo" />
+        </figure>
+        <h2>dr-rezvani-vet.ir</h2>
+        <p>
+          Design and development of a complete frontend & backend solution for a veterinary dental clinic. Responsive layout, multilingual support, appointment booking form, clean UI matching the clinic’s branding.
+        </p>
+        <p><strong>Link:</strong> <a href="https://dr-rezvani-vet.ir" target="_blank">dr-rezvani-vet.ir</a></p>
+      </article>
+
+      <article class="project-card" tabindex="0">
+        <h2>Real-Time Chat API (Node.js & WebSockets)</h2>
+        <p>
+          Developed a scalable chat backend using WebSocket, handling user presence, messaging persistence, and RESTful endpoints for real-time interaction.
         </p>
       </article>
 
       <article class="project-card" tabindex="0">
-        <h2 data-i18n="projects.project2.title">Backend Automation with Python</h2>
-        <p data-i18n="projects.project2.description">
-          A collection of Python scripts automating data processing and workflows, including ETL tasks.
+        <h2>Data Automation Scripts (Python)</h2>
+        <p>
+          A suite of Python scripts automating CSV data processing, ETL tasks, and deployment pipelines—reducing manual workload and increasing reliability.
         </p>
       </article>
 
       <article class="project-card" tabindex="0">
-        <h2 data-i18n="projects.project3.title">Development Project Documentation</h2>
-        <p data-i18n="projects.project3.description">
-          Creating comprehensive documentation for software projects with an emphasis on clarity and developer accessibility.
+        <h2>Interactive Dashboard (Frontend)</h2>
+        <p>
+          Built a dynamic, responsive dashboard using modern JavaScript frameworks. Integrated API data, charts, and interactive UI elements for business insights.
         </p>
       </article>
+
     </section>
   </main>
 
   <footer class="site-footer" role="contentinfo">
-    <p>© 2025 Saeed AliShahbazi. All rights reserved.</p>
+    <p>© 2025 Shahbazion. All rights reserved.</p>
   </footer>
 </body>
 </html>
