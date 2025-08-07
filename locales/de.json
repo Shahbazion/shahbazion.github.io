@@ -5,61 +5,55 @@
   "nav.contact": "Kontakt",
 
   "home.welcome": "Hallo! Ich bin Saeed AliShahbazi.",
-  "home.description": "Ich bin ein Backend-Entwickler mit Fokus auf JavaScript, Node.js und Python. Für mich bedeutet Programmieren mehr als nur Code zu schreiben – es geht darum, präzise, wartbare und zuverlässige Lösungen für reale Herausforderungen zu schaffen.\n\nIch lege großen Wert auf sauberen, strukturierten und gut dokumentierten Code. Ich arbeite professionell mit Git und GitHub, mache sinnvolle Commits und halte meine Branches organisiert.\n\nIch entwerfe Systeme, die skalierbar, wartbar und verständlich sind. Zu meinen Fähigkeiten gehören API-Entwicklung, Datenbankmanagement und professionelle Dokumentation.\n\nMein Ziel ist es, auszuwandern und eine berufliche Perspektive im Ausland aufzubauen – in einem Umfeld, das Wachstum ermöglicht und Innovation fördert.\n\nIch schätze Zusammenarbeit, die auf Qualität, Transparenz und gegenseitigem Respekt basiert.",
+  "home.description": "Ich bin Backend- und Frontend-Entwickler mit Schwerpunkt auf JavaScript, Node.js und Python. Für mich bedeutet Programmieren mehr als nur Code zu schreiben; es geht darum, präzise, wartbare und zuverlässige Lösungen für reale Herausforderungen zu schaffen.\n\nIch lege großen Wert auf sauberen, strukturierten und gut dokumentierten Code. Professionell nutze ich Git und GitHub, erstelle sinnvolle Commits und verwalte organisierte Branches.\n\nIch entwerfe Systeme, die skalierbar, wartbar und verständlich sind. Meine Fähigkeiten umfassen API-Entwicklung, Datenbankmanagement und professionelle Dokumentation.\n\nMein Ziel ist es, ins Ausland zu migrieren und dort eine Arbeitsstelle zu etablieren, um in einem professionellen Umfeld zu wachsen und innovative Möglichkeiten zu verfolgen.\n\nIch schätze Zusammenarbeit, die auf Qualität, Transparenz und gegenseitigem Respekt basiert.",
 
   "about.title": "Über mich",
   "about.name": "Saeed AliShahbazi",
-  "about.roles": "Backend-Entwickler | Dokumentationsliebhaber | Suchender nach Meisterschaft und Wachstum",
-  "about.birthdate": "Geburtsdatum: 10. November 1998",
-
-  "about.greeting": "Hallo. Ich bin nicht nur ein Entwickler, sondern ein Suchender, der die tiefen Strukturen von Systemen, Bewusstsein und Kreativität erforscht.",
-  "about.childhood": "Schon als Kind war ich fasziniert von den unsichtbaren Mustern, die die Realität formen – ob in Computern oder in der menschlichen Psyche. Diese Neugier führte mich sowohl zur Technologie als auch zur inneren Wahrheit.",
-
+  "about.roles": "Backend- & Frontend-Entwickler | Dokumentations-Enthusiast | Sucher nach Meisterschaft",
+  "about.birthdate": "Geboren: 10. November 1998",
+  "about.greeting": "Grüße. Ich bin nicht nur Entwickler, sondern auch ein Suchender — jemand, der die tiefen Architekturen von Systemen, Bewusstsein und Kreativität erforscht.",
+  "about.childhood": "Schon als Kind fühlte ich mich zu den unsichtbaren Strukturen hingezogen, die die Realität bestimmen — sei es die logischen Systeme in Computern oder archetypische Muster im Geist. Ich verfolgte sowohl Technologie als auch innere Wahrheit mit derselben Neugier.",
   "about.learningPath": "Mein Lernweg",
-  "about.learningDesc": "Meine Reise begann mit Backend-Technologien – zuerst mit Node.js, später auch mit Python. Ich lernte, wie man APIs entwickelt, Datenbanken verwaltet und automatisierte Workflows erstellt – und wie man Code schreibt, der robust, lesbar und testbar ist.",
-  "about.tools": "Ich beherrsche Tools wie Git, GitHub, Postman, VS Code, Linux, REST-APIs und Paketmanager wie npm, yarn und pip. Saubere Commits, sinnvolle Branches und präzise Dokumentation gehören zu meiner professionellen Haltung.",
-  "about.pythonDesc": "Python ist meine zweite starke Sprache. Ich nutze es für Automatisierung, Backend-Prozesse und bald auch für Datenverarbeitung, ETL und Skripterstellung.",
-
-  "about.beliefsTitle": "Werte und Überzeugungen",
-  "about.beliefsDesc": "Softwareentwicklung ist für mich nicht nur ein Beruf, sondern ein Weg zu Klarheit, Disziplin und Integrität. Ich betrachte Code als lebendiges System – er braucht Pflege, Verbindung und bewusstes Design. Ich glaube an Wachstum durch Struktur, innere Arbeit und kontinuierliches Reflektieren – im Code wie im Selbst.",
-
-  "about.devMeans": "Was bedeutet Entwicklung für mich?",
-  "about.commitment": "Ich bin verpflichtet, sauberen, modularen und skalierbaren Code zu schreiben, der sowohl die Bedürfnisse der Nutzer erfüllt als auch langfristig wartbar ist.",
-  "about.communication": "Für mich ist klare, respektvolle und lösungsorientierte Kommunikation essenziell.",
-  "about.responsibility": "Ich übernehme Verantwortung für die Systeme, die ich baue, und verbessere sie kontinuierlich mit Intention und Achtsamkeit.",
-
-  "about.goalsTitle": "Ziele und Zukunftsvision",
-  "about.goalsDesc": "Ich strebe eine ortsunabhängige, sinnvolle Karriere an. Ich suche nach Freelance- oder Remote-Möglichkeiten, die auf Innovation, Qualität und ethischer Ausrichtung basieren.",
-  "about.environmentDesc": "Ich arbeite gerne in Teams, die kreative Autonomie, strukturiertes Lernen und psychologische Sicherheit wertschätzen – besonders in multikulturellen, bewussten Umfeldern.",
-
+  "about.learningDesc": "Meine Reise begann mit einem tiefen Einstieg in Backend-Technologien, angefangen mit Node.js und erweitert um Python. Ich lernte nicht nur APIs zu bauen, mit Datenbanken zu arbeiten und Workflows zu automatisieren — sondern auch nachhaltigen, lesbaren und testbaren Code zu schreiben.",
+  "about.tools": "Ich bin versiert im Umgang mit Git, GitHub, Postman, VS Code, Linux, REST APIs und Paketmanagern wie npm/yarn/pip. Saubere Commits, sinnvolle Branches und präzise Dokumentation sind Teil meiner Entwicklerethik.",
+  "about.pythonDesc": "Python ist eine mächtige zweite Sprache in meinem Stack geworden. Ich nutze sie für Automatisierung, Backend-Workflows und bald auch für datenbezogene Aufgaben (ETL-Pipelines, Skripterstellung und Datenumwandlung).",
+  "about.beliefsTitle": "Glauben & Werte",
+  "about.beliefsDesc": "Für mich ist Entwicklung nicht nur ein Beruf — es ist ein Weg der Klarheit, Disziplin und Integration. Ich betrachte Codebasen als lebendige Organismen: Sie brauchen Pflege, Kommunikation und bewusste Struktur. Ich glaube an Wachstum durch Struktur, innere Arbeit und kontinuierliches Refactoring — sowohl im Code als auch im Selbst.",
+  "about.devMeans": "Was Entwicklung für mich bedeutet",
+  "about.commitment": "Ich verpflichte mich, sauberen, modularen und skalierbaren Code zu schreiben, der sowohl den Nutzerbedürfnissen als auch der langfristigen Wartbarkeit entspricht.",
+  "about.communication": "Ich schätze Kommunikation, die klar, respektvoll und auf gemeinsame Lösungen ausgerichtet ist.",
+  "about.responsibility": "Ich übernehme Verantwortung für die Systeme, die ich entwerfe, und verbessere sie kontinuierlich mit Absicht und Bewusstsein.",
+  "about.goalsTitle": "Vision & Zukunftsziele",
+  "about.goalsDesc": "Mein Ziel ist es, eine ortsunabhängige, spirituell geerdete Karriere aufzubauen. Ich suche Freelance-Kollaborationen und Remote-Positionen, die Innovation, Qualität und ethische Resonanz vereinen.",
+  "about.environmentDesc": "Ich strebe danach, Teams beizutreten, in denen kreative Autonomie, strukturiertes Lernen und psychologische Sicherheit selbstverständlich sind. Besonders interessieren mich interkulturelle Umgebungen und Systeme, die bewusstes Arbeiten fördern.",
   "about.whyWorkWithMeTitle": "Warum mit mir arbeiten?",
-  "about.whyWorkWithMe1": "Ich kombiniere technische Präzision mit philosophischer Tiefe und psychologischer Klarheit.",
-  "about.whyWorkWithMe2": "Ich bringe sowohl fokussierte Selbstständigkeit als auch Bereitschaft zur offenen Zusammenarbeit mit.",
-  "about.whyWorkWithMe3": "Ich liefere hochwertige, zukunftsfähige Lösungen mit Liebe zum Detail.",
-  "about.whyWorkWithMe4": "Ich lege Wert auf sinnvolle Arbeit, gemeinsames Wachstum und authentische Resultate.",
+  "about.whyWorkWithMe1": "Ich verbinde technische Präzision mit philosophischer Tiefe und psychologischer Klarheit.",
+  "about.whyWorkWithMe2": "Ich bringe sowohl unabhängige Fokussierung als auch kollaborative Offenheit in jedes Projekt ein.",
+  "about.whyWorkWithMe3": "Ich liefere qualitativ hochwertigen Code mit langfristigem Mindset und Liebe zum Detail.",
+  "about.whyWorkWithMe4": "Ich lege großen Wert auf sinnvolle Arbeit, gegenseitiges Wachstum und abgestimmte Ergebnisse.",
 
-  "projects.title": "Projekte",
-  "projects.intro": "Hier finden Sie eine Auswahl meiner Projekte. Alle wurden sorgfältig entwickelt, um reale Bedürfnisse abzudecken und langfristig wartbar zu sein.",
+  "projects.title": "Meine Projekte",
+  "projects.intro": "Hier finden Sie eine sorgfältig ausgewählte Sammlung meiner wichtigsten Projekte, die mit Sorgfalt entwickelt wurden, um reale Herausforderungen zu lösen und durch robuste Backend- und Frontend-Entwicklung nachhaltige Wirkung zu erzielen.",
 
-  "projects.project1.title": "API-Management-System",
-  "projects.project1.description": "Ein RESTful-Service, entwickelt mit Node.js und Express, konzipiert zur Verwaltung dynamischer Daten. Fokus auf Skalierbarkeit und Sicherheit.",
+  "projects.project1.title": "dr-rezvani-vet.ir",
+  "projects.project1.description": "Ich habe die Full-Stack-Lösung für die Veterinärklinik Dr. Rezvani entworfen und entwickelt und eine nahtlose, mehrsprachige Plattform geschaffen, die Tierbesitzern einfachen Zugang zu veterinärmedizinischen Dienstleistungen ermöglicht. Dieses Projekt bietet ein vollständig responsives Design, ein intuitives Terminbuchungssystem und eine saubere Benutzeroberfläche, die mit der Markenidentität der Klinik übereinstimmt. Das Backend basiert auf Node.js und Python, um Skalierbarkeit, Sicherheit und eine reibungslose API-Integration sicherzustellen.",
+  "projects.project1.link": "Website besuchen",
 
-  "projects.project2.title": "Backend-Automatisierung mit Python",
-  "projects.project2.description": "Eine Sammlung von Python-Skripten zur Automatisierung von Datenverarbeitung und Workflows, einschließlich ETL-Prozessen.",
+  "projects.project2.title": "Echtzeit-Chat-API (Node.js & WebSockets)",
+  "projects.project2.description": "Entwicklung eines leistungsfähigen, skalierbaren Chat-Backends unter Verwendung der WebSocket-Technologie, das Echtzeit-Benutzerpräsenz, Nachrichtenpersistenz und robuste RESTful-Endpunkte ermöglicht. Diese API unterstützt nahtlose Interaktionen zwischen Clients mit effizientem Zustandsmanagement und Fehlertoleranz.",
 
-  "projects.project3.title": "Dokumentation von Entwicklungsprojekten",
-  "projects.project3.description": "Erstellung umfassender Dokumentationen für Softwareprojekte mit Schwerpunkt auf Lesbarkeit und Verständlichkeit für Entwickler und Stakeholder.",
+  "projects.project3.title": "Datenautomatisierungsskripte (Python)",
+  "projects.project3.description": "Erstellung einer Sammlung von Python-Skripten zur Automatisierung wichtiger Datenverarbeitungs-Workflows, einschließlich CSV-Parsing, ETL-Pipelines und Deployment-Aufgaben. Diese Tools reduzieren den manuellen Aufwand erheblich und erhöhen die Zuverlässigkeit und Konsistenz der Backend-Operationen.",
 
-  "projects.callToAction": "Wenn Sie an einer Zusammenarbeit interessiert sind oder ein Projekt besprechen möchten, kontaktieren Sie mich bitte.",
+  "projects.project4.title": "Interaktives Dashboard (Frontend)",
+  "projects.project4.description": "Entwicklung einer modernen, responsiven Dashboard-Anwendung mit fortschrittlichen JavaScript-Frameworks. Das Dashboard integriert dynamische API-Daten, visuelle Diagramme und interaktive UI-Komponenten, um umsetzbare Geschäftseinblicke mit einer reibungslosen Benutzererfahrung zu bieten.",
 
-  "contact.title": "Kontakt",
-  "contact.description": "Zögern Sie nicht, mich zu kontaktieren, um Projekte, Kooperationen oder Fragen zu besprechen.",
-  
+  "contact.description": "Kontaktieren Sie mich gerne, um Projekte, Kooperationen oder Fragen zu besprechen.",
   "contact.form.name": "Name",
   "contact.form.email": "E-Mail",
   "contact.form.message": "Nachricht",
   "contact.form.submit": "Senden",
 
-  "contact.featuredProject.title": "Ausgewähltes Projekt: Dr. Rezvani Veterinärklinik",
-  "contact.featuredProject.description": "Ich habe das Backend und die Architektur für die Website der Dr. Rezvani Veterinärklinik entwickelt. Die Seite bietet Tierhaltern einfachen Zugang zu veterinärmedizinischen Dienstleistungen, Terminvereinbarungen und Informationsressourcen. Meine Rolle umfasste die Erstellung eines skalierbaren Backends mit Node.js und Python, die Sicherstellung einer reibungslosen API-Integration und die sichere Datenverarbeitung."
+  "contact.featuredProject.title": "Hervorgehobenes Projekt: Veterinärklinik Dr. Rezvani",
+  "contact.featuredProject.description": "Ich habe das Backend und die Gesamtarchitektur der Website der Veterinärklinik Dr. Rezvani entwickelt. Die Seite bietet Tierbesitzern einfachen Zugang zu veterinärmedizinischen Dienstleistungen, Terminvereinbarungen und Bildungsressourcen. Meine Rolle umfasste die Erstellung eines skalierbaren Backends mit Node.js und Python, die Sicherstellung einer reibungslosen API-Integration und die sichere Datenverwaltung."
 }

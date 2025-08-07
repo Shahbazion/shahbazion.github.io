@@ -26,12 +26,13 @@ body {
   filter: drop-shadow(0 0 5px #f5a623);
   cursor: pointer;
   transition: transform 0.3s ease;
-  border-radius: 12px; /* گوشه‌های گرد‌تر برای آیکون سایت */
+  border-radius: 12px;
 }
 #logo:hover {
   transform: scale(1.1);
 }
 
+/* ===== Main navigation ===== */
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -56,10 +57,14 @@ body {
   outline: none;
 }
 
+/* ===== Language switcher ===== */
 .lang-switcher {
-  display: flex;
+  display: inline-flex !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 0.8rem;
   margin-left: auto;
+  direction: ltr !important; /* همواره چپ به راست */
 }
 
 .lang-btn {
@@ -74,7 +79,13 @@ body {
   min-width: 40px;
   text-align: center;
   user-select: none;
+  order: 0;
 }
+
+.lang-btn[data-lang="en"] { order: 1; }
+.lang-btn[data-lang="fa"] { order: 2; }
+.lang-btn[data-lang="de"] { order: 3; }
+.lang-btn[data-lang="ar"] { order: 4; }
 
 .lang-btn[aria-pressed="true"] {
   background-color: #ffb347;
@@ -86,6 +97,7 @@ body {
   background-color: rgba(255, 179, 71, 0.3);
 }
 
+/* ===== Banner image ===== */
 .banner {
   width: 100%;
   height: 320px;
@@ -98,6 +110,7 @@ body {
   border-radius: 10px;
 }
 
+/* ===== Main content area ===== */
 main {
   max-width: 900px;
   margin: 0 auto;
@@ -121,19 +134,19 @@ p {
 }
 
 #profilePhoto {
-  width: 250px; /* بزرگ‌تر */
+  width: 250px;
   height: 250px;
-  border-radius: 18%; /* گوشه‌های کمی گرد */
+  border-radius: 18%;
   object-fit: cover;
   box-shadow: 0 0 25px #ffb347;
   transition: transform 0.3s ease;
   cursor: default;
 }
-
 #profilePhoto:hover {
   transform: scale(1.05);
 }
 
+/* ===== Footer ===== */
 .site-footer {
   background: #000;
   color: #777;
@@ -144,6 +157,7 @@ p {
   box-shadow: inset 0 1px 3px rgba(255, 179, 71, 0.3);
 }
 
+/* ===== Responsive behavior ===== */
 @media (max-width: 600px) {
   .site-header {
     flex-direction: column;
@@ -157,6 +171,9 @@ p {
 
   .lang-switcher {
     margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
   main {

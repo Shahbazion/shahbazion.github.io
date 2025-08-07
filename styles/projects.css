@@ -38,12 +38,30 @@
   text-align: center;
 }
 
+/* استایل عمومی تصاویر پروژه */
 .project-card img {
   max-width: 100px;
   height: auto;
   display: inline-block;
   border-radius: 8px;
   filter: drop-shadow(0 0 5px #ffb347);
+}
+
+/* استایل اختصاصی لوگوی دکتر رضوانی */
+.project-card img.rezvani-logo {
+  max-width: 70px; /* کوچکتر */
+  border: 2px solid #ffb347; /* قاب طلایی */
+  padding: 4px;
+  border-radius: 12px;
+  filter: drop-shadow(0 0 8px #ffd700);
+  background-color: #2a2a2a;
+  box-shadow: 0 0 12px rgba(255, 179, 71, 0.8);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card img.rezvani-logo:hover,
+.project-card img.rezvani-logo:focus {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 1);
 }
 
 .project-card h2 {

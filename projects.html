@@ -27,50 +27,58 @@
       </ul>
     </nav>
     <nav role="navigation" aria-label="Language switcher" class="lang-switcher">
-      <button data-lang="en" aria-pressed="true" class="lang-btn" lang="en">EN</button>
-      <button data-lang="fa" aria-pressed="false" class="lang-btn" lang="fa">FA</button>
-      <button data-lang="de" aria-pressed="false" class="lang-btn" lang="de">DE</button>
-      <button data-lang="ar" aria-pressed="false" class="lang-btn" lang="ar">AR</button>
+      <button data-lang="en" aria-pressed="true" class="lang-btn" lang="en" type="button">EN</button>
+      <button data-lang="fa" aria-pressed="false" class="lang-btn" lang="fa" type="button">FA</button>
+      <button data-lang="de" aria-pressed="false" class="lang-btn" lang="de" type="button">DE</button>
+      <button data-lang="ar" aria-pressed="false" class="lang-btn" lang="ar" type="button">AR</button>
     </nav>
   </header>
 
   <main id="content" role="main" tabindex="-1">
     <h1 data-i18n="projects.title">My Projects</h1>
     <p data-i18n="projects.intro">
-      A selection of meaningful projects I've developed—showcasing both backend and frontend capabilities, and real client work.
+      Here you’ll find a curated selection of my key projects, each crafted with care to solve real-world challenges and deliver lasting impact through robust backend and frontend development.
     </p>
 
     <section class="projects-list" aria-label="List of projects">
 
-      <article class="project-card" tabindex="0">
+      <article class="project-card" tabindex="0" aria-labelledby="proj1-title">
         <figure>
-          <img src="images/dr-rezvani-logo.png" alt="Dr. Rezvani Vet Logo" />
+          <img src="images/dr-rezvani-screenshot.png" alt="Screenshot of Dr. Rezvani Veterinary Clinic Website" loading="lazy" />
+          <figcaption>پروژه کلینیک دامپزشکی دکتر رضوانی</figcaption>
         </figure>
-        <h2>dr-rezvani-vet.ir</h2>
+        <h2 id="proj1-title">dr-rezvani-vet.ir</h2>
         <p>
-          Design and development of a complete frontend & backend solution for a veterinary dental clinic. Responsive layout, multilingual support, appointment booking form, clean UI matching the clinic’s branding.
+          I architected and developed the full-stack solution for <strong>Dr. Rezvani Veterinary Clinic</strong>, delivering a seamless, multilingual platform that empowers pet owners with easy access to veterinary services.
+          <br /><br />
+          The project features a fully responsive design, an intuitive appointment booking system, and a clean user interface aligned with the clinic's branding identity.
+          <br /><br />
+          Backend was implemented using Node.js and Python to ensure scalability, security, and smooth API integration, creating a reliable foundation for ongoing growth and maintenance.
         </p>
-        <p><strong>Link:</strong> <a href="https://dr-rezvani-vet.ir" target="_blank">dr-rezvani-vet.ir</a></p>
+        <p><strong>Explore the site:</strong> <a href="https://dr-rezvani-vet.ir" target="_blank" rel="noopener noreferrer">dr-rezvani-vet.ir</a></p>
       </article>
 
-      <article class="project-card" tabindex="0">
-        <h2>Real-Time Chat API (Node.js & WebSockets)</h2>
+      <article class="project-card" tabindex="0" aria-labelledby="proj2-title">
+        <h2 id="proj2-title">Real-Time Chat API (Node.js & WebSockets)</h2>
         <p>
-          Developed a scalable chat backend using WebSocket, handling user presence, messaging persistence, and RESTful endpoints for real-time interaction.
-        </p>
-      </article>
-
-      <article class="project-card" tabindex="0">
-        <h2>Data Automation Scripts (Python)</h2>
-        <p>
-          A suite of Python scripts automating CSV data processing, ETL tasks, and deployment pipelines—reducing manual workload and increasing reliability.
+          Developed a high-performance, scalable chat backend using WebSocket technology, enabling real-time user presence, messaging persistence, and robust RESTful endpoints.
+          This API supports seamless interaction across clients with efficient state management and fault tolerance.
         </p>
       </article>
 
-      <article class="project-card" tabindex="0">
-        <h2>Interactive Dashboard (Frontend)</h2>
+      <article class="project-card" tabindex="0" aria-labelledby="proj3-title">
+        <h2 id="proj3-title">Data Automation Scripts (Python)</h2>
         <p>
-          Built a dynamic, responsive dashboard using modern JavaScript frameworks. Integrated API data, charts, and interactive UI elements for business insights.
+          Created a collection of Python scripts automating critical data processing workflows, including CSV parsing, ETL pipelines, and deployment tasks.
+          These tools significantly reduce manual effort while increasing reliability and consistency in backend operations.
+        </p>
+      </article>
+
+      <article class="project-card" tabindex="0" aria-labelledby="proj4-title">
+        <h2 id="proj4-title">Interactive Dashboard (Frontend)</h2>
+        <p>
+          Built a modern, responsive dashboard application using cutting-edge JavaScript frameworks.
+          The dashboard integrates dynamic API data, visual charts, and interactive UI components to provide actionable business insights with smooth user experience.
         </p>
       </article>
 

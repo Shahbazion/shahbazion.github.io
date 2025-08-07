@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   const langButtons = document.querySelectorAll('.lang-btn');
   const i18nElements = document.querySelectorAll('[data-i18n]');
+  const html = document.documentElement;
+  const langSwitcher = document.querySelector('.lang-switcher');
 
   async function loadTranslations(lang) {
     try {
@@ -14,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
           el.textContent = translations[key];
         }
       });
+
+      updateDirection(lang);
     } catch (error) {
       console.error(error);
     }
@@ -23,6 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
     langButtons.forEach(btn => {
       btn.setAttribute('aria-pressed', btn.dataset.lang === selectedLang ? 'true' : 'false');
     });
+  }
+
+  function updateDirection(lang) {
+    const rtlLanguages = ['fa', 'ar'];
+    const dir = rtlLanguages.includes(lang) ? 'rtl' : 'ltr';
+    html.setAttribute('dir', dir);
+    html.setAttribute('lang', lang);
+
+    // ثابت نگه داشتن جهت سوئیچر زبان
+    if (langSwitcher) {
+      langSwitcher.setAttribute('dir', 'ltr');
+    }
   }
 
   const savedLang = localStorage.getItem('site-lang') || 'en';

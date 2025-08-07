@@ -1,59 +1,85 @@
-{
-  "nav.home": "Home",
-  "nav.about": "About Me",
-  "nav.projects": "Projects",
-  "nav.contact": "Contact",
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  "home.welcome": "Hello! I am Saeed AliShahbazi.",
-  "home.description": "I am a backend & frontend developer focusing on JavaScript, Node.js, and Python. For me, programming goes beyond writing code; it’s about creating precise, maintainable, and reliable solutions for real-world challenges.\n\nI have always prioritized writing clean, structured, and well-documented code. I use Git and GitHub professionally, committing meaningful changes and maintaining organized branches.\n\nI design systems that are scalable, maintainable, and understandable. My skills include API development, database management, and professional documentation.\n\nMy goal is to migrate and establish work residency abroad, seeking a professional environment where I can grow and pursue innovative opportunities.\n\nI value collaborations based on quality, transparency, and mutual respect.",
+  <title data-i18n="projects.title">Projects | Saeed AliShahbazi</title>
+  <meta name="description" content="Showcase of projects by Saeed AliShahbazi, backend & frontend developer with expertise in Node.js, Python, JavaScript." />
+  <meta name="author" content="Saeed AliShahbazi" />
 
-  "about.title": "About Me",
-  "about.name": "Saeed AliShahbazi",
-  "about.roles": "Backend & Frontend Developer | Documentation Enthusiast | Seeker of Mastery",
-  "about.birthdate": "Born: November 10, 1998",
-  "about.greeting": "Greetings. I am not just a developer, but a seeker—one who explores the deep architecture of systems, consciousness, and creativity.",
-  "about.childhood": "From a young age, I was drawn to the invisible frameworks that govern reality—whether they were logical systems in computers or archetypal patterns within the psyche. I pursued both technology and inner truth with the same curiosity.",
-  "about.learningPath": "My Learning Path",
-  "about.learningDesc": "My journey began with a deep dive into backend technologies, starting with Node.js and extending into Python. I learned not only how to build APIs, work with databases, and automate workflows—but also how to write sustainable, readable, and testable code.",
-  "about.tools": "I am proficient in Git, GitHub, Postman, VS Code, Linux, REST APIs, and package managers like npm/yarn/pip. I prioritize clean commits, meaningful branching, and precise documentation as part of my developer ethic.",
-  "about.pythonDesc": "Python has become a powerful second language in my stack. I use it for automation, backend workflows, and soon, data-related tasks (ETL pipelines, scripting, and data transformation).",
-  "about.beliefsTitle": "Beliefs & Values",
-  "about.beliefsDesc": "To me, development is not just a career—it’s a path of clarity, discipline, and integration. I treat codebases like living organisms: they require care, communication, and conscious structure. I believe in growth through structure, inner work, and continual refactoring—of both code and self.",
-  "about.devMeans": "What Development Means to Me",
-  "about.commitment": "I commit to writing clean, modular, and scalable code that aligns with both user needs and long-term maintainability.",
-  "about.communication": "I value communication that is clear, respectful, and oriented toward shared solutions.",
-  "about.responsibility": "I take ownership of the systems I design and continuously improve them with intention and awareness.",
-  "about.goalsTitle": "Vision & Future Goals",
-  "about.goalsDesc": "My goal is to build a location-independent, spiritually grounded career. I seek freelance collaborations and remote positions that align with innovation, quality, and ethical resonance.",
-  "about.environmentDesc": "I aspire to join teams where creative autonomy, structured learning, and psychological safety are the norm. I am especially interested in cross-cultural environments and systems that support conscious work.",
-  "about.whyWorkWithMeTitle": "Why Work With Me?",
-  "about.whyWorkWithMe1": "I merge technical precision with philosophical depth and psychological clarity.",
-  "about.whyWorkWithMe2": "I bring both independent focus and collaborative openness to every project.",
-  "about.whyWorkWithMe3": "I deliver quality code with a long-term mindset and attention to detail.",
-  "about.whyWorkWithMe4": "I care deeply about meaningful work, mutual growth, and aligned outcomes.",
+  <link rel="icon" href="images/icon.png" type="image/png" sizes="32x32" />
+  <link rel="stylesheet" href="styles/projects.css" />
+  <script defer src="js/f18i.js"></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a href="index.html" aria-label="Homepage" class="logo-link">
+      <img src="images/logo.png" alt="Saeed AliShahbazi Logo" id="logo" loading="lazy" />
+    </a>
+    <nav role="navigation" aria-label="Main menu" class="main-nav">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About Me</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects" class="active" aria-current="page">Projects</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav role="navigation" aria-label="Language switcher" class="lang-switcher">
+      <button data-lang="en" aria-pressed="true" class="lang-btn" lang="en">EN</button>
+      <button data-lang="fa" aria-pressed="false" class="lang-btn" lang="fa">FA</button>
+      <button data-lang="de" aria-pressed="false" class="lang-btn" lang="de">DE</button>
+      <button data-lang="ar" aria-pressed="false" class="lang-btn" lang="ar">AR</button>
+    </nav>
+  </header>
 
-  "projects.title": "My Projects",
-  "projects.intro": "A selection of meaningful projects I've developed—showcasing both backend and frontend capabilities, and real client work.",
+  <main id="content" role="main" tabindex="-1" class="projects-container">
+    <h1 data-i18n="projects.title">My Projects</h1>
+    <p data-i18n="projects.intro">
+      Here you’ll find a curated selection of my key projects, each crafted with care to solve real-world challenges and deliver lasting impact through robust backend and frontend development.
+    </p>
 
-  "projects.project1.title": "dr-rezvani-vet.ir",
-  "projects.project1.description": "Design and development of a complete frontend & backend solution for a veterinary dental clinic. Responsive layout, multilingual support, appointment booking form, and a clean UI matching the clinic’s branding.",
-  "projects.project1.link": "Visit Website",
+    <section class="projects-list" aria-label="List of projects">
 
-  "projects.project2.title": "Real-Time Chat API (Node.js & WebSockets)",
-  "projects.project2.description": "Developed a scalable chat backend using WebSocket, handling user presence, messaging persistence, and RESTful endpoints for real-time interaction.",
+      <article class="project-card" tabindex="0" aria-labelledby="proj1-title">
+        <figure>
+          <img src="images/dr-rezvani-screenshot.png" alt="Screenshot of Dr. Rezvani Veterinary Clinic Website" loading="lazy" />
+          <figcaption>پروژه کلینیک دامپزشکی دکتر رضوانی</figcaption>
+        </figure>
+        <h2 id="proj1-title" data-i18n="projects.project1.title">dr-rezvani-vet.ir</h2>
+        <p data-i18n="projects.project1.description">
+          I architected and developed the full-stack solution for Dr. Rezvani Veterinary Clinic, delivering a seamless, multilingual platform that empowers pet owners with easy access to veterinary services. This project features a fully responsive design, an intuitive appointment booking system, and a clean UI aligned with the clinic's branding identity. The backend leverages Node.js and Python to ensure scalability, security, and smooth API integration.
+        </p>
+        <p><a href="https://dr-rezvani-vet.ir" target="_blank" rel="noopener noreferrer" data-i18n="projects.project1.link">Visit Website</a></p>
+      </article>
 
-  "projects.project3.title": "Data Automation Scripts (Python)",
-  "projects.project3.description": "A suite of Python scripts automating CSV data processing, ETL tasks, and deployment pipelines—reducing manual workload and increasing reliability.",
+      <article class="project-card" tabindex="0" aria-labelledby="proj2-title">
+        <h2 id="proj2-title" data-i18n="projects.project2.title">Real-Time Chat API (Node.js & WebSockets)</h2>
+        <p data-i18n="projects.project2.description">
+          Developed a high-performance, scalable chat backend using WebSocket technology, enabling real-time user presence, messaging persistence, and robust RESTful endpoints. This API supports seamless interaction across clients with efficient state management and fault tolerance.
+        </p>
+      </article>
 
-  "projects.project4.title": "Interactive Dashboard (Frontend)",
-  "projects.project4.description": "Built a dynamic, responsive dashboard using modern JavaScript frameworks. Integrated API data, charts, and interactive UI elements for business insights.",
+      <article class="project-card" tabindex="0" aria-labelledby="proj3-title">
+        <h2 id="proj3-title" data-i18n="projects.project3.title">Data Automation Scripts (Python)</h2>
+        <p data-i18n="projects.project3.description">
+          Created a collection of Python scripts automating critical data processing workflows, including CSV parsing, ETL pipelines, and deployment tasks. These tools significantly reduce manual effort while increasing reliability and consistency in backend operations.
+        </p>
+      </article>
 
-  "contact.description": "Feel free to reach out to discuss projects, collaborations, or any questions.",
-  "contact.form.name": "Name",
-  "contact.form.email": "Email",
-  "contact.form.message": "Message",
-  "contact.form.submit": "Send",
+      <article class="project-card" tabindex="0" aria-labelledby="proj4-title">
+        <h2 id="proj4-title" data-i18n="projects.project4.title">Interactive Dashboard (Frontend)</h2>
+        <p data-i18n="projects.project4.description">
+          Built a modern, responsive dashboard application using cutting-edge JavaScript frameworks. The dashboard integrates dynamic API data, visual charts, and interactive UI components to provide actionable business insights with a smooth user experience.
+        </p>
+      </article>
 
-  "contact.featuredProject.title": "Featured Project: Dr. Rezvani Veterinary Clinic",
-  "contact.featuredProject.description": "I developed the backend and overall architecture for Dr. Rezvani's Veterinary Clinic website. The site provides pet owners with easy access to veterinary services, appointment scheduling, and educational resources. My role included creating a scalable backend using Node.js and Python, ensuring smooth API integration and secure data handling."
-}
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2025 Shahbazion. All rights reserved.</p>
+  </footer>
+</body>
+</html>
