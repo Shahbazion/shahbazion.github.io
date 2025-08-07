@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title data-i18n="projects.title">Projects | Saeed AliShahbazi</title>
+  <meta name="description" content="Showcase of projects by Saeed AliShahbazi, backend developer with expertise in Node.js, Python, and JavaScript." />
+  <meta name="author" content="Saeed AliShahbazi" />
+
+  <link rel="icon" href="images/icon.png" type="image/png" sizes="32x32" />
+  <link rel="stylesheet" href="styles/projects.css" />
+  <script defer src="js/f18i.js"></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a href="index.html" aria-label="Homepage" class="logo-link">
+      <img src="images/logo.png" alt="Saeed AliShahbazi Logo" id="logo" loading="lazy" />
+    </a>
+
+    <nav role="navigation" aria-label="Main menu" class="main-nav">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About Me</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects" class="active" aria-current="page">Projects</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav role="navigation" aria-label="Language switcher" class="lang-switcher">
+      <button data-lang="en" aria-pressed="true" class="lang-btn" lang="en">EN</button>
+      <button data-lang="fa" aria-pressed="false" class="lang-btn" lang="fa">FA</button>
+      <button data-lang="de" aria-pressed="false" class="lang-btn" lang="de">DE</button>
+      <button data-lang="ar" aria-pressed="false" class="lang-btn" lang="ar">AR</button>
+    </nav>
+  </header>
+
+  <main id="content" role="main" tabindex="-1" class="projects-container">
+    <h1 data-i18n="projects.title">My Projects</h1>
+    <p data-i18n="projects.intro">
+      Here are some of the projects I have worked on, demonstrating my skills in backend development and system design.
+    </p>
+
+    <section class="projects-list" aria-label="List of projects">
+      <article class="project-card" tabindex="0">
+        <h2 data-i18n="projects.project1.title">API Management System</h2>
+        <p data-i18n="projects.project1.description">
+          A RESTful service developed using Node.js and Express to manage dynamic data, focusing on scalability and security.
+        </p>
+      </article>
+
+      <article class="project-card" tabindex="0">
+        <h2 data-i18n="projects.project2.title">Backend Automation with Python</h2>
+        <p data-i18n="projects.project2.description">
+          A collection of Python scripts automating data processing and workflows, including ETL tasks.
+        </p>
+      </article>
+
+      <article class="project-card" tabindex="0">
+        <h2 data-i18n="projects.project3.title">Development Project Documentation</h2>
+        <p data-i18n="projects.project3.description">
+          Creating comprehensive documentation for software projects with an emphasis on clarity and developer accessibility.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2025 Saeed AliShahbazi. All rights reserved.</p>
+  </footer>
+</body>
+</html>

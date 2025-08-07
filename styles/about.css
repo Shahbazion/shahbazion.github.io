@@ -1,8 +1,7 @@
-/* --- عمومی برای همه صفحات --- */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
+  background-color: #111;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -24,10 +23,10 @@ body {
 
 #logo {
   height: 50px;
-  filter: drop-shadow(0 0 5px #f5a623);
-  cursor: pointer;
-  transition: transform 0.3s ease;
   border-radius: 12px;
+  filter: drop-shadow(0 0 5px #f5a623);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 #logo:hover {
   transform: scale(1.1);
@@ -51,10 +50,91 @@ body {
 }
 
 .main-nav ul li a:hover,
-.main-nav ul li a:focus {
+.main-nav ul li a:focus,
+.main-nav ul li a.active {
   background-color: #ff6f00;
   color: white;
   outline: none;
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: auto;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 2px solid #ffb347;
+  color: #ffb347;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lang-btn[aria-pressed="true"] {
+  background-color: #ffb347;
+  color: #121212;
+}
+
+.lang-btn:hover:not([aria-pressed="true"]) {
+  background-color: rgba(255, 179, 71, 0.3);
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffd700;
+  text-align: center;
+  text-shadow: 0 0 10px #ff8c00;
+  margin-bottom: 1rem;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #ffa500;
+  margin: 0.5rem 0;
+}
+
+.birthdate {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #e0c799;
+}
+
+section {
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #f0e6d2;
+  padding: 0 1rem;
+}
+
+section h4 {
+  color: #ffcc00;
+  margin-top: 1.8rem;
+  font-size: 1.3rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.about-photo {
+  display: block;
+  max-width: 300px;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 16px;
+  box-shadow: 0 0 25px #ffb347;
 }
 
 .site-footer {
@@ -63,72 +143,10 @@ body {
   text-align: center;
   font-size: 0.85rem;
   padding: 1rem 0;
-  user-select: none;
   box-shadow: inset 0 1px 3px rgba(255, 179, 71, 0.3);
+  user-select: none;
 }
 
-/* --- استایل اختصاصی برای صفحه درباره من --- */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  flex-grow: 1;
-  text-align: center;
-}
-
-h1 {
-  font-size: 2.8rem;
-  color: #ffd700;
-  text-shadow: 0 0 10px #ff8c00;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #ffb347;
-}
-
-h3 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-  color: #ccc;
-}
-
-p {
-  font-size: 1.1rem;
-  color: #f0e6d2;
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-  text-align: justify;
-}
-
-ul {
-  list-style-type: square;
-  color: #f0e6d2;
-  padding-right: 1.5rem;
-  text-align: right;
-  line-height: 1.8;
-}
-
-/* تصویر پروفایل اگر اضافه شد */
-#profilePhoto {
-  width: 250px;
-  height: 250px;
-  border-radius: 18%;
-  object-fit: cover;
-  box-shadow: 0 0 25px #ffb347;
-  transition: transform 0.3s ease;
-  cursor: default;
-  margin: 1.5rem auto;
-  display: block;
-}
-#profilePhoto:hover {
-  transform: scale(1.05);
-}
-
-/* ریسپانسیو */
 @media (max-width: 600px) {
   .site-header {
     flex-direction: column;
@@ -140,24 +158,11 @@ ul {
     gap: 1rem;
   }
 
-  main {
-    padding: 1rem;
+  .about-photo {
+    max-width: 200px;
   }
 
   h1 {
     font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  #profilePhoto {
-    width: 180px;
-    height: 180px;
   }
 }

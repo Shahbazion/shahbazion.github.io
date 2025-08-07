@@ -36,5 +36,30 @@
   "about.whyWorkWithMe1": "Ich kombiniere technische Präzision mit philosophischer Tiefe und psychologischer Klarheit.",
   "about.whyWorkWithMe2": "Ich bringe sowohl fokussierte Selbstständigkeit als auch Bereitschaft zur offenen Zusammenarbeit mit.",
   "about.whyWorkWithMe3": "Ich liefere hochwertige, zukunftsfähige Lösungen mit Liebe zum Detail.",
-  "about.whyWorkWithMe4": "Ich lege Wert auf sinnvolle Arbeit, gemeinsames Wachstum und authentische Resultate."
+  "about.whyWorkWithMe4": "Ich lege Wert auf sinnvolle Arbeit, gemeinsames Wachstum und authentische Resultate.",
+
+  "projects.title": "Projekte",
+  "projects.intro": "Hier finden Sie eine Auswahl meiner Projekte. Alle wurden sorgfältig entwickelt, um reale Bedürfnisse abzudecken und langfristig wartbar zu sein.",
+
+  "projects.project1.title": "API-Management-System",
+  "projects.project1.description": "Ein RESTful-Service, entwickelt mit Node.js und Express, konzipiert zur Verwaltung dynamischer Daten. Fokus auf Skalierbarkeit und Sicherheit.",
+
+  "projects.project2.title": "Backend-Automatisierung mit Python",
+  "projects.project2.description": "Eine Sammlung von Python-Skripten zur Automatisierung von Datenverarbeitung und Workflows, einschließlich ETL-Prozessen.",
+
+  "projects.project3.title": "Dokumentation von Entwicklungsprojekten",
+  "projects.project3.description": "Erstellung umfassender Dokumentationen für Softwareprojekte mit Schwerpunkt auf Lesbarkeit und Verständlichkeit für Entwickler und Stakeholder.",
+
+  "projects.callToAction": "Wenn Sie an einer Zusammenarbeit interessiert sind oder ein Projekt besprechen möchten, kontaktieren Sie mich bitte.",
+
+  "contact.title": "Kontakt",
+  "contact.description": "Zögern Sie nicht, mich zu kontaktieren, um Projekte, Kooperationen oder Fragen zu besprechen.",
+  
+  "contact.form.name": "Name",
+  "contact.form.email": "E-Mail",
+  "contact.form.message": "Nachricht",
+  "contact.form.submit": "Senden",
+
+  "contact.featuredProject.title": "Ausgewähltes Projekt: Dr. Rezvani Veterinärklinik",
+  "contact.featuredProject.description": "Ich habe das Backend und die Architektur für die Website der Dr. Rezvani Veterinärklinik entwickelt. Die Seite bietet Tierhaltern einfachen Zugang zu veterinärmedizinischen Dienstleistungen, Terminvereinbarungen und Informationsressourcen. Meine Rolle umfasste die Erstellung eines skalierbaren Backends mit Node.js und Python, die Sicherstellung einer reibungslosen API-Integration und die sichere Datenverarbeitung."
 }

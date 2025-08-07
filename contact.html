@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="nav.contact">Contact</title>
+  <link rel="stylesheet" href="styles/contact.css" />
+  <link rel="icon" href="images/icon.png" type="image/png" sizes="32x32" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a href="index.html" id="logo" aria-label="Saeed AliShahbazi Logo" class="logo-link">
+      <img src="images/logo.png" alt="Saeed AliShahbazi Logo" height="50" loading="lazy" />
+    </a>
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About Me</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-container" role="main" tabindex="-1">
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <h1 id="contact-heading" data-i18n="nav.contact">Contact</h1>
+      <p data-i18n="contact.description">Feel free to reach out to me for collaborations, questions, or opportunities.</p>
+
+      <form id="contactForm" method="POST" action="https://formspree.io/f/your-form-id" aria-label="Contact form">
+        <label for="name" data-i18n="contact.form.name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          data-i18n-placeholder="contact.form.namePlaceholder"
+          placeholder="Your full name"
+        />
+
+        <label for="email" data-i18n="contact.form.email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="_replyto"
+          required
+          data-i18n-placeholder="contact.form.emailPlaceholder"
+          placeholder="your.email@example.com"
+        />
+
+        <label for="message" data-i18n="contact.form.message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required
+          data-i18n-placeholder="contact.form.messagePlaceholder"
+          placeholder="Write your message here..."
+        ></textarea>
+
+        <button type="submit" data-i18n="contact.form.submit">Send</button>
+      </form>
+    </section>
+
+    <section class="project-highlight" aria-labelledby="featured-project-heading">
+      <h2 id="featured-project-heading" data-i18n="contact.featuredProject.title">Featured Project: Dr. Rezvani Veterinary Clinic</h2>
+      <img src="images/dr-rezvani-screenshot.png" alt="Screenshot of Dr. Rezvani Veterinary Clinic project" loading="lazy" />
+      <p data-i18n="contact.featuredProject.description">A web application developed to streamline veterinary clinic operations, featuring appointment management and patient tracking.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; 2025 Saeed AliShahbazi</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
