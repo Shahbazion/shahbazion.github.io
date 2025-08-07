@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <title>Shahbazion Official Site</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title data-i18n="home.title">Saeed AliShahbazi | Backend Developer</title>
+  <meta name="description" content="Saeed AliShahbazi – backend developer merging technology with cosmic wisdom." />
+  <meta name="author" content="Saeed AliShahbazi" />
+
+  <link rel="icon" href="images/icon.png" type="image/png" sizes="32x32" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <script defer src="js/f18i.js"></script>
 </head>
 <body>
-  <h1>Welcome to Shahbazion</h1>
-  <p>This is the starting point for my signature site.</p>
+  <header class="site-header" role="banner">
+    <a href="./" aria-label="Homepage" class="logo-link">
+      <img src="images/logo.png" alt="Saeed AliShahbazi Logo" id="logo" loading="lazy" />
+    </a>
+
+    <nav role="navigation" aria-label="Main menu" class="main-nav">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home" class="active">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About Me</a></li>
+        <li><a href="#" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav role="navigation" aria-label="Language switcher" class="lang-switcher">
+      <button data-lang="en" aria-pressed="true" class="lang-btn" lang="en">EN</button>
+      <button data-lang="fa" aria-pressed="false" class="lang-btn" lang="fa">FA</button>
+      <button data-lang="de" aria-pressed="false" class="lang-btn" lang="de">DE</button>
+      <button data-lang="ar" aria-pressed="false" class="lang-btn" lang="ar">AR</button>
+    </nav>
+  </header>
+
+  <section class="banner" role="img" aria-label="Cosmic journey banner" aria-hidden="true"></section>
+
+  <main id="content" role="main" tabindex="-1">
+    <article>
+      <h1 data-i18n="home.welcome">Hello! I am Saeed AliShahbazi.</h1>
+      <p data-i18n="home.description">
+        I am a backend developer specializing in JavaScript, Node.js, and Python. Programming for me is more than writing code; it’s about crafting precise, maintainable, and reliable solutions to real-world challenges.<br /><br />
+        I always emphasize writing clean, well-structured, and documented code. I follow professional Git/GitHub practices, including meaningful commits and organized branching.<br /><br />
+        I design systems that are scalable, maintainable, and easy to understand. My expertise covers API development, database management, and thorough documentation.<br /><br />
+        I intend to migrate and establish work residency abroad, aiming for a professional environment that fosters growth and innovation.<br /><br />
+        I seek collaborations grounded in quality, transparency, and mutual respect.
+      </p>
+
+      <figure>
+        <img src="images/me.jpg" alt="Portrait of Saeed AliShahbazi" id="profilePhoto" loading="lazy" />
+      </figure>
+    </article>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <p>© 2025 Shahbazion. All rights reserved.</p>
+  </footer>
 </body>
 </html>

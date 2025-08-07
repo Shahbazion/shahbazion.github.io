@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="about.title">درباره‌ی من</title>
+  <link rel="stylesheet" href="styles/about.css" />
+  <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a href="index.html" aria-label="خانه" class="logo-link">
+      <img src="images/logo.png" alt="لوگو سعید علی‌شهبازی" id="logo" loading="lazy" />
+    </a>
+    <nav class="main-nav" role="navigation" aria-label="منوی اصلی">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">خانه</a></li>
+        <li><a href="about.html" data-i18n="nav.about" aria-current="page">درباره من</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">پروژه‌ها</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">تماس</a></li>
+      </ul>
+    </nav>
+    <nav class="lang-switcher" role="navigation" aria-label="تغییر زبان">
+      <button data-lang="en" aria-pressed="false" class="lang-btn" lang="en">EN</button>
+      <button data-lang="fa" aria-pressed="true" class="lang-btn" lang="fa">FA</button>
+      <button data-lang="de" aria-pressed="false" class="lang-btn" lang="de">DE</button>
+      <button data-lang="ar" aria-pressed="false" class="lang-btn" lang="ar">AR</button>
+    </nav>
+  </header>
+
+  <main id="content" role="main" tabindex="-1" class="about-container">
+    <h1 data-i18n="about.title">درباره‌ی من</h1>
+    <h2 data-i18n="about.name">سعید علی‌شهبازی</h2>
+    <h3 data-i18n="about.roles">Backend Developer | Documentation Enthusiast | Seeker of Mastery</h3>
+    <p><strong data-i18n="about.birthdate">متولد ۲۲ فروردین ۱۳۷۸ (April 10, 1999)</strong></p>
+
+    <section>
+      <p data-i18n="about.greeting"></p>
+      <p data-i18n="about.childhood"></p>
+      <h4 data-i18n="about.learningPath"></h4>
+      <p data-i18n="about.learningDesc"></p>
+      <p data-i18n="about.tools"></p>
+      <p data-i18n="about.pythonDesc"></p>
+      <h4 data-i18n="about.beliefsTitle"></h4>
+      <p data-i18n="about.beliefsDesc"></p>
+      <h4 data-i18n="about.devMeans"></h4>
+      <ul>
+        <li data-i18n="about.commitment"></li>
+        <li data-i18n="about.communication"></li>
+        <li data-i18n="about.responsibility"></li>
+      </ul>
+      <h4 data-i18n="about.goalsTitle"></h4>
+      <p data-i18n="about.goalsDesc"></p>
+      <p data-i18n="about.environmentDesc"></p>
+      <h4 data-i18n="about.whyWorkWithMeTitle"></h4>
+      <ul>
+        <li data-i18n="about.whyWorkWithMe1"></li>
+        <li data-i18n="about.whyWorkWithMe2"></li>
+        <li data-i18n="about.whyWorkWithMe3"></li>
+        <li data-i18n="about.whyWorkWithMe4"></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2025 Saeed AliShahbazi. All rights reserved.</p>
+  </footer>
+
+  <script defer src="js/f18i.js"></script>
+</body>
+</html>

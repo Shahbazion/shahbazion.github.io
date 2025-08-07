@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #000, #333);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 15px #ff8c00;
+  flex-wrap: wrap;
+}
+
+#logo {
+  height: 50px;
+  filter: drop-shadow(0 0 5px #f5a623);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 12px; /* گوشه‌های گرد‌تر برای آیکون سایت */
+}
+#logo:hover {
+  transform: scale(1.1);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li a {
+  color: #ffb347;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
+  background-color: #ff6f00;
+  color: white;
+  outline: none;
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: auto;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 2px solid #ffb347;
+  color: #ffb347;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 40px;
+  text-align: center;
+  user-select: none;
+}
+
+.lang-btn[aria-pressed="true"] {
+  background-color: #ffb347;
+  color: #121212;
+  border-color: #ffb347;
+}
+
+.lang-btn:hover:not([aria-pressed="true"]) {
+  background-color: rgba(255, 179, 71, 0.3);
+}
+
+.banner {
+  width: 100%;
+  height: 320px;
+  background-image: url('../images/logooo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: drop-shadow(0 0 10px #ffb347);
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ff8c00;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #f0e6d2;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+#profilePhoto {
+  width: 250px; /* بزرگ‌تر */
+  height: 250px;
+  border-radius: 18%; /* گوشه‌های کمی گرد */
+  object-fit: cover;
+  box-shadow: 0 0 25px #ffb347;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+#profilePhoto:hover {
+  transform: scale(1.05);
+}
+
+.site-footer {
+  background: #000;
+  color: #777;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 1rem 0;
+  user-select: none;
+  box-shadow: inset 0 1px 3px rgba(255, 179, 71, 0.3);
+}
+
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .lang-switcher {
+    margin-left: 0;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #profilePhoto {
+    width: 180px;
+    height: 180px;
+  }
+}
