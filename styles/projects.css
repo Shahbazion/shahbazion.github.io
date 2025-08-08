@@ -21,21 +21,18 @@ body {
   user-select: text;
 }
 
-/* ===== Direction & language adjustments ===== */
+/* ===== Direction and language based adjustments ===== */
 html[lang="fa"],
 html[lang="ar"] {
   direction: rtl;
   unicode-bidi: embed;
-    text-align: right;
 }
 
 html[lang="en"],
 html[lang="de"] {
   direction: ltr;
   unicode-bidi: embed;
-    text-align: left;
 }
-
 /* ===== Site header ===== */
 .site-header {
   position: sticky;
@@ -133,13 +130,12 @@ html[lang="de"] {
   cursor: pointer;
   min-width: 48px;
   text-align: center;
+  user-select: none;
   letter-spacing: 0.03em;
   text-shadow: 0 0 6px rgba(212, 175, 55, 0.8);
   order: 0;
   transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
-  user-select: none;
 }
-
 .lang-btn[data-lang="en"] { order: 1; }
 .lang-btn[data-lang="fa"] { order: 2; }
 .lang-btn[data-lang="de"] { order: 3; }
