@@ -36,22 +36,22 @@ html[lang="de"] {
 
 /* ===== Site header ===== */
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 1rem 2rem;
-  background: linear-gradient(90deg, rgba(30, 30, 30, 0.9), rgba(60, 60, 60, 0.9));
-  backdrop-filter: blur(12px) saturate(180%);
   position: sticky;
   top: 0;
   z-index: 10000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, rgba(30, 30, 30, 0.9), rgba(60, 60, 60, 0.9));
+  backdrop-filter: blur(12px) saturate(180%);
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
   border-bottom: 2px solid #d4af37;
-  text-align: center;
-  direction: inherit;
-  transition: background-color 0.3s ease;
   user-select: none;
+  direction: ltr;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .site-header:hover {
@@ -79,12 +79,12 @@ html[lang="de"] {
   gap: 1.6rem;
   margin: 0;
   padding: 0;
+  direction: ltr;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  direction: inherit;
   user-select: none;
+  text-align: center;
 }
 
 .main-nav ul li a {
@@ -101,11 +101,11 @@ html[lang="de"] {
 }
 
 .main-nav ul li a:hover,
-.main-nav ul li a:focus-visible,
+.main-nav ul li a:focus,
 .main-nav ul li a.active {
   background-color: #f5a623;
   color: #121212;
-  outline: 2px solid #b98f1b;
+  outline: none;
   box-shadow: 0 0 18px #f5a623;
   cursor: pointer;
 }
@@ -116,9 +116,8 @@ html[lang="de"] {
   flex-direction: row;
   gap: 1rem;
   margin-left: auto;
-  flex-wrap: nowrap;
   direction: ltr !important;
-  user-select: none;
+  flex-wrap: nowrap;
 }
 
 .lang-btn {
