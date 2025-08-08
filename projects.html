@@ -6,86 +6,443 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title data-i18n="projects.title">Projects | Saeed AliShahbazi</title>
-  <meta name="description" content="Showcase of projects by Saeed AliShahbazi, backend & frontend developer with expertise in Node.js, Python, JavaScript." />
+  <meta name="description" content="Portfolio of Saeed AliShahbazi – showcasing backend, fullstack, and personal projects." />
   <meta name="author" content="Saeed AliShahbazi" />
 
   <link rel="icon" href="images/icon.png" type="image/png" sizes="32x32" />
-  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/projects.css" />
   <script defer src="js/f18i.js"></script>
 </head>
 <body>
   <header class="site-header" role="banner">
-    <a href="index.html" aria-label="Homepage" class="logo-link">
+    <a href="./" aria-label="Homepage" class="logo-link">
       <img src="images/logo.png" alt="Saeed AliShahbazi Logo" id="logo" loading="lazy" />
     </a>
-    <nav role="navigation" aria-label="Main menu" class="main-nav">
+
+    <nav role="navigation" class="main-nav">
       <ul>
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li><a href="about.html" data-i18n="nav.about">About Me</a></li>
-        <li><a href="projects.html" data-i18n="nav.projects" class="active" aria-current="page">Projects</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects" class="active">Projects</a></li>
         <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
+
     <nav role="navigation" aria-label="Language switcher" class="lang-switcher">
-      <button data-lang="en" aria-pressed="true" class="lang-btn" lang="en" type="button">EN</button>
-      <button data-lang="fa" aria-pressed="false" class="lang-btn" lang="fa" type="button">FA</button>
-      <button data-lang="de" aria-pressed="false" class="lang-btn" lang="de" type="button">DE</button>
-      <button data-lang="ar" aria-pressed="false" class="lang-btn" lang="ar" type="button">AR</button>
+      <button data-lang="en" aria-pressed="true" class="lang-btn" lang="en">EN</button>
+      <button data-lang="fa" aria-pressed="false" class="lang-btn" lang="fa">FA</button>
+      <button data-lang="de" aria-pressed="false" class="lang-btn" lang="de">DE</button>
+      <button data-lang="ar" aria-pressed="false" class="lang-btn" lang="ar">AR</button>
     </nav>
   </header>
 
   <main id="content" role="main" tabindex="-1">
-    <h1 data-i18n="projects.title">My Projects</h1>
-    <p data-i18n="projects.intro">
-      Here you’ll find a curated selection of my key projects, each crafted with care to solve real-world challenges and deliver lasting impact through robust backend and frontend development.
-    </p>
+    <section class="projects-section">
+      <h1 data-i18n="projects.heading">My Projects</h1>
 
-    <section class="projects-list" aria-label="List of projects">
+      <div class="profile-row" aria-hidden="false">
+        <img src="images/me.jpg" alt="Saeed AliShahbazi" id="profileSmall" loading="lazy" />
+        <p data-i18n="projects.intro">Selected projects mostly focused on backend engineering, APIs, and freelance-ready solutions.</p>
+      </div>
 
-      <article class="project-card" tabindex="0" aria-labelledby="proj1-title">
-        <figure>
-          <img src="images/dr-rezvani-screenshot.png" alt="Screenshot of Dr. Rezvani Veterinary Clinic Website" loading="lazy" />
-          <figcaption>پروژه کلینیک دامپزشکی دکتر رضوانی</figcaption>
-        </figure>
-        <h2 id="proj1-title">dr-rezvani-vet.ir</h2>
-        <p>
-          I architected and developed the full-stack solution for <strong>Dr. Rezvani Veterinary Clinic</strong>, delivering a seamless, multilingual platform that empowers pet owners with easy access to veterinary services.
-          <br /><br />
-          The project features a fully responsive design, an intuitive appointment booking system, and a clean user interface aligned with the clinic's branding identity.
-          <br /><br />
-          Backend was implemented using Node.js and Python to ensure scalability, security, and smooth API integration, creating a reliable foundation for ongoing growth and maintenance.
-        </p>
-        <p><strong>Explore the site:</strong> <a href="https://dr-rezvani-vet.ir" target="_blank" rel="noopener noreferrer">dr-rezvani-vet.ir</a></p>
-      </article>
+      <div class="projects-grid">
 
-      <article class="project-card" tabindex="0" aria-labelledby="proj2-title">
-        <h2 id="proj2-title">Real-Time Chat API (Node.js & WebSockets)</h2>
-        <p>
-          Developed a high-performance, scalable chat backend using WebSocket technology, enabling real-time user presence, messaging persistence, and robust RESTful endpoints.
-          This API supports seamless interaction across clients with efficient state management and fault tolerance.
-        </p>
-      </article>
+        <!-- Dr. Rezvani project -->
+        <article class="project-card" id="proj-dr-rezvani">
+          <header class="project-header">
+            <h2 data-i18n="projects.drrezvani.title">Dr. Rezvani Veterinary Clinic</h2>
+            <p class="project-tag" data-i18n="projects.tag.client">Client project · Live site</p>
+          </header>
 
-      <article class="project-card" tabindex="0" aria-labelledby="proj3-title">
-        <h2 id="proj3-title">Data Automation Scripts (Python)</h2>
-        <p>
-          Created a collection of Python scripts automating critical data processing workflows, including CSV parsing, ETL pipelines, and deployment tasks.
-          These tools significantly reduce manual effort while increasing reliability and consistency in backend operations.
-        </p>
-      </article>
+          <img src="images/dr-rezvani-screenshot.png" alt="Dr. Rezvani Veterinary Clinic preview" class="project-img" loading="lazy" />
 
-      <article class="project-card" tabindex="0" aria-labelledby="proj4-title">
-        <h2 id="proj4-title">Interactive Dashboard (Frontend)</h2>
-        <p>
-          Built a modern, responsive dashboard application using cutting-edge JavaScript frameworks.
-          The dashboard integrates dynamic API data, visual charts, and interactive UI components to provide actionable business insights with smooth user experience.
-        </p>
-      </article>
+          <div class="project-body">
+            <p data-i18n="projects.drrezvani.description">
+              Implemented full website and appointment/contact backend for a veterinary clinic. Deployed to cPanel (shared hosting). Lightweight, SEO-friendly static pages plus dynamic forms.
+            </p>
 
+            <ul class="tech-stack" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript (f18i.js + i18n JSON)</li>
+              <li>PHP (contact &amp; appointment form handling)</li>
+              <li>cPanel / shared hosting</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn-live" href="https://www.dr-rezvani-vet.ir" target="_blank" rel="noopener" data-i18n="projects.live">Live Demo</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+            </div>
+
+            <details class="project-notes">
+              <summary data-i18n="projects.implementationNotes">Implementation notes</summary>
+              <ul>
+                <li>Frontend built with semantic HTML and responsive CSS, prioritizing accessibility and speed.</li>
+                <li>Localization via <code>locales/*.json</code> and <code>js/f18i.js</code> for runtime text swapping.</li>
+                <li>Forms post to PHP endpoint that validates input and sends emails (hosted on cPanel).</li>
+                <li>Deployed via cPanel file manager / FTP; runs on shared hosting with caching headers.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- User Management & Auth API -->
+        <article class="project-card" id="proj-userapi">
+          <header class="project-header">
+            <h2 data-i18n="projects.userapi.title">Secure User Management & Authentication API (JWT + OAuth2)</h2>
+          </header>
+
+          <img src="images/icon.png" alt="User Management API preview" class="project-img" loading="lazy" />
+
+          <div class="project-body">
+            <p data-i18n="projects.userapi.description">Built a RESTful API with signup, login, password recovery, roles, and permissions.</p>
+
+            <ul class="tech-stack">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>JWT</li>
+              <li>OAuth2</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+            </div>
+
+            <details class="project-notes">
+              <summary data-i18n="projects.implementationNotes">Implementation notes</summary>
+              <ul>
+                <li>Secure JWT authentication with role-based access control.</li>
+                <li>OAuth2 integration for third-party login support.</li>
+                <li>Input validation and password hashing for security.</li>
+                <li>Comprehensive API documentation for clients.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Crypto Payment System -->
+        <article class="project-card" id="proj-crypto">
+          <header class="project-header">
+            <h2 data-i18n="projects.crypto.title">Cryptocurrency Payment and Transaction Management System (USDT, Bitcoin, Ethereum)</h2>
+          </header>
+
+          <img src="images/icon.png" alt="Crypto Payment System preview" class="project-img" loading="lazy" />
+
+          <div class="project-body">
+            <p data-i18n="projects.crypto.description">API to accept, verify, and record payments with webhook and strong security.</p>
+
+            <ul class="tech-stack">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>Webhook Security</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+            </div>
+
+            <details class="project-notes">
+              <summary data-i18n="projects.implementationNotes">Implementation notes</summary>
+              <ul>
+                <li>Webhook verification for secure payment processing.</li>
+                <li>Support for multiple cryptocurrencies including USDT, Bitcoin, and Ethereum.</li>
+                <li>Database transaction logging and error handling.</li>
+                <li>API designed for integration with various frontend clients.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Appointment Booking System -->
+        <article class="project-card" id="proj-booking">
+          <header class="project-header">
+            <h2 data-i18n="projects.booking.title">Online Appointment Booking System</h2>
+          </header>
+
+          <img src="images/icon.png" alt="Appointment Booking System preview" class="project-img" loading="lazy" />
+
+          <div class="project-body">
+            <p data-i18n="projects.booking.description">Suitable for clinics, beauty salons, educational centers, and more.</p>
+
+            <ul class="tech-stack">
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>REST API</li>
+              <li>Responsive UI</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+            </div>
+
+            <details class="project-notes">
+              <summary data-i18n="projects.implementationNotes">Implementation notes</summary>
+              <ul>
+                <li>Responsive frontend UI compatible with various devices.</li>
+                <li>Robust PHP backend with secure MySQL database integration.</li>
+                <li>REST API endpoints for appointment management.</li>
+                <li>Input validation and notification email integration.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Inventory + Orders Panel -->
+        <article class="project-card" id="proj-inventory">
+          <header class="project-header">
+            <h2 data-i18n="projects.inventory.title">Inventory and Orders Management Panel</h2>
+          </header>
+
+          <img src="images/icon.png" alt="Inventory & Orders Panel preview" class="project-img" loading="lazy" />
+
+          <div class="project-body">
+            <p data-i18n="projects.inventory.description">Multi-user support, reporting, and REST API for frontend integration.</p>
+
+            <ul class="tech-stack">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+              <li>JWT</li>
+              <li>Role-based Access</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+            </div>
+
+            <details class="project-notes">
+              <summary data-i18n="projects.implementationNotes">Implementation notes</summary>
+              <ul>
+                <li>Role-based access control for different user types.</li>
+                <li>Real-time inventory tracking and order management.</li>
+                <li>Comprehensive reporting features.</li>
+                <li>Secure REST API for frontend applications.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Real-time Chat Backend -->
+        <article class="project-card" id="proj-chat">
+          <header class="project-header">
+            <h2 data-i18n="projects.chat.title">Real-time Chat Backend Service</h2>
+          </header>
+
+          <img src="images/icon.png" alt="Real-time Chat Backend preview" class="project-img" loading="lazy" />
+
+          <div class="project-body">
+            <p data-i18n="projects.chat.description">Built with WebSocket, Redis Pub/Sub, or Socket.io technologies.</p>
+
+            <ul class="tech-stack">
+              <li>Node.js</li>
+              <li>Socket.io</li>
+              <li>Redis</li>
+              <li>WebSocket</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+            </div>
+
+            <details class="project-notes">
+              <summary data-i18n="projects.implementationNotes">Implementation notes</summary>
+              <ul>
+                <li>Low-latency messaging with WebSocket protocol.</li>
+                <li>Scalable pub/sub architecture using Redis.</li>
+                <li>Socket.io for fallback and browser compatibility.</li>
+                <li>Session management and authentication integration.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Task Scheduler + Retry -->
+        <article class="project-card" id="proj-tasks">
+          <header class="project-header">
+            <h2 data-i18n="projects.tasks.title">Background Task Scheduler and Retry System</h2>
+          </header>
+
+          <img src="images/icon.png" alt="Task Scheduler Microservice preview" class="project-img" loading="lazy" />
+
+          <div class="project-body">
+            <p data-i18n="projects.tasks.description">Built microservice for asynchronous processing with Redis Queue or Celery.</p>
+
+            <ul class="tech-stack">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>Redis (RQ / Celery)</li>
+              <li>Docker</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+            </div>
+
+            <details class="project-notes">
+              <summary data-i18n="projects.implementationNotes">Implementation notes</summary>
+              <ul>
+                <li>Reliable task scheduling and retry mechanisms.</li>
+                <li>Integration with Redis queueing or Celery workers.</li>
+                <li>Dockerized environment for easy deployment.</li>
+                <li>API for job monitoring and control.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- i18n backend -->
+        <article class="project-card" id="proj-i18n">
+          <header class="project-header">
+            <h2 data-i18n="projects.i18n.title">Content Translation and Multilingual API (i18n backend)</h2>
+          </header>
+
+          <img src="images/icon.png" alt="i18n Backend API preview" class="project-img" loading="lazy" />
+
+          <div class="project-body">
+            <p data-i18n="projects.i18n.description">Manages languages, translations, and delivers content via API.</p>
+
+            <ul class="tech-stack">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>i18n</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+            </div>
+
+            <details class="project-notes">
+              <summary data-i18n="projects.implementationNotes">Implementation notes</summary>
+              <ul>
+                <li>Dynamic language and translation management.</li>
+                <li>API endpoints for fetching localized content.</li>
+                <li>MongoDB schema optimized for multilingual data.</li>
+                <li>Integration with frontend localization frameworks.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Cloud File Storage -->
+        <article class="project-card" id="proj-cloudstorage">
+          <header class="project-header">
+            <h2 data-i18n="projects.cloudstorage.title">Cloud File Storage and Management Service (File Upload & CDN integration)</h2>
+          </header>
+
+          <img src="images/icon.png" alt="Cloud File Storage Service preview" class="project-img" loading="lazy" />
+
+          <div class="project-body">
+            <p data-i18n="projects.cloudstorage.description">File upload, processing, and secure access management.</p>
+
+            <ul class="tech-stack">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>AWS S3</li>
+              <li>CDN</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+            </div>
+
+            <details class="project-notes">
+              <summary data-i18n="projects.implementationNotes">Implementation notes</summary>
+              <ul>
+                <li>Efficient file upload handling with streaming.</li>
+                <li>Integration with AWS S3 and CDN for fast content delivery.</li>
+                <li>Access control and security policies for files.</li>
+                <li>Scalable architecture to handle large files and traffic.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Logging + Monitoring API -->
+        <article class="project-card" id="proj-logging">
+          <header class="project-header">
+            <h2 data-i18n="projects.logging.title">Logging and Monitoring API System</h2>
+          </header>
+
+          <img src="images/icon.png" alt="Logging and Monitoring API preview" class="project-img" loading="lazy" />
+
+          <div class="project-body">
+            <p data-i18n="projects.logging.description">For large projects requiring monitoring and alerting.</p>
+
+            <ul class="tech-stack">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Elastic Stack</li>
+              <li>Prometheus</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+            </div>
+
+            <details class="project-notes">
+              <summary data-i18n="projects.implementationNotes">Implementation notes</summary>
+              <ul>
+                <li>Centralized log collection and storage using Elastic Stack.</li>
+                <li>Real-time monitoring and alerting via Prometheus.</li>
+                <li>Dashboard visualization for error trends and metrics.</li>
+                <li>API for querying logs and system health status.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+        <!-- Analytics backend -->
+        <article class="project-card" id="proj-analytics">
+          <header class="project-header">
+            <h2 data-i18n="projects.analytics.title">User Analytics and Reporting API Backend</h2>
+          </header>
+
+          <img src="images/icon.png" alt="Analytics API preview" class="project-img" loading="lazy" />
+
+          <div class="project-body">
+            <p data-i18n="projects.analytics.description">Collects input data and provides various statistics and reports.</p>
+
+            <ul class="tech-stack">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>PostgreSQL</li>
+              <li>Data Visualization</li>
+            </ul>
+
+            <div class="project-links">
+              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+            </div>
+
+            <details class="project-notes">
+              <summary data-i18n="projects.implementationNotes">Implementation notes</summary>
+              <ul>
+                <li>Efficient data ingestion and storage in PostgreSQL.</li>
+                <li>API endpoints for analytics queries and reports.</li>
+                <li>Visual dashboards for real-time statistics.</li>
+                <li>Secure access and performance optimization.</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
+  <footer role="contentinfo" class="site-footer">
     <p>© 2025 Shahbazion. All rights reserved.</p>
   </footer>
 </body>
