@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212; /* رنگ پس‌زمینه مشابه index */
-  color: #f0e6d2; /* رنگ متن مشابه index */
+  background-color: #121212;
+  color: #f0e6d2;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -37,7 +37,7 @@ html[lang="de"] {
   z-index: 10000;
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
   flex-wrap: wrap;
-  direction: ltr;
+  direction: inherit; /* اصلاح شده */
   text-align: center;
   border-bottom: 2px solid #d4af37;
   transition: background-color 0.3s ease;
@@ -68,7 +68,7 @@ html[lang="de"] {
   margin: 0;
   padding: 0;
   text-align: center;
-  direction: ltr;
+  direction: inherit; /* اصلاح شده */
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -87,12 +87,13 @@ html[lang="de"] {
 }
 
 .main-nav ul li a:hover,
-.main-nav ul li a:focus,
+.main-nav ul li a:focus-visible,
 .main-nav ul li a.active {
   background-color: #f5a623;
   color: #121212;
-  outline: none;
+  outline: 2px solid #b98f1b;
   box-shadow: 0 0 18px #f5a623;
+  cursor: pointer;
 }
 
 /* ===== Language switcher ===== */
@@ -150,7 +151,7 @@ main {
   text-align: center;
 }
 
-/* متن پاراگراف و محتوای بدنه باید start تراز شود تا در RTL راست‌چین و در LTR چپ‌چین باشد */
+/* متن پاراگراف و محتوای بدنه باید start تراز شود */
 p,
 .project-body p {
   font-size: 1.2rem;
@@ -158,6 +159,7 @@ p,
   margin-bottom: 2rem;
   line-height: 1.5;
   text-align: start;
+  overflow-wrap: break-word; /* اضافه شده */
 }
 
 h1 {
@@ -181,6 +183,8 @@ h1 {
 #profileSmall {
   width: 150px;
   height: 150px;
+  max-width: 100%;
+  max-height: 150px;
   border-radius: 20%;
   object-fit: cover;
   box-shadow: 0 0 50px #d4af37;
@@ -209,6 +213,8 @@ h1 {
   flex-direction: column;
   text-align: start;
   transition: transform 0.25s ease;
+  /* اگر کل کارت کلیک‌خور هست، uncomment کن */
+  /* cursor: pointer; */
 }
 
 .project-card:hover {
@@ -237,6 +243,7 @@ h1 {
   margin-bottom: 1rem;
   font-size: 1rem;
   text-align: start;
+  overflow-wrap: break-word;
 }
 
 .tech-stack {
@@ -274,10 +281,11 @@ h1 {
   text-decoration: none;
   box-shadow: 0 0 15px #b98f1b99;
   transition: background-color 0.3s ease;
+  user-select: none;
 }
 
 .project-links a:hover,
-.project-links a:focus {
+.project-links a:focus-visible {
   background-color: #b98f1b;
   outline: none;
 }
@@ -332,7 +340,6 @@ h1 {
   line-height: 1.6;
 }
 
-/* Optional: Links inside footer */
 .site-footer a {
   color: #d4af37;
   text-decoration: none;
@@ -380,7 +387,7 @@ h1 {
   .main-nav ul {
     flex-direction: column;
     gap: 1rem;
-    direction: ltr;
+    direction: inherit; /* اصلاح شده */
     width: 100%;
     padding: 0;
     margin: 0;
