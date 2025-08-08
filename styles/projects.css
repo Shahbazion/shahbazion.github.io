@@ -1,17 +1,27 @@
-/* ===== Base styles ===== */
+/* ===== Reset and base styles ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
-  color: #f0e6d2;
+  background-color: #121212; /* پس‌زمینه تاریک */
+  color: #f0e6d2; /* رنگ روشن متن */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  user-select: text;
 }
 
-/* ===== Direction and language based adjustments ===== */
+/* ===== Direction & language adjustments ===== */
 html[lang="fa"],
 html[lang="ar"] {
   direction: rtl;
@@ -29,18 +39,19 @@ html[lang="de"] {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
   background: linear-gradient(90deg, rgba(30, 30, 30, 0.9), rgba(60, 60, 60, 0.9));
   backdrop-filter: blur(12px) saturate(180%);
-  padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 10000;
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-  flex-wrap: wrap;
-  direction: inherit; /* اصلاح شده */
-  text-align: center;
   border-bottom: 2px solid #d4af37;
+  text-align: center;
+  direction: inherit;
   transition: background-color 0.3s ease;
+  user-select: none;
 }
 
 .site-header:hover {
@@ -50,11 +61,12 @@ html[lang="de"] {
 /* ===== Logo ===== */
 #logo {
   height: 52px;
+  border-radius: 12px;
   filter: drop-shadow(0 0 8px #d4af37);
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
-  border-radius: 12px;
 }
+
 #logo:hover {
   transform: scale(1.12);
   filter: drop-shadow(0 0 20px #f5a623);
@@ -67,23 +79,25 @@ html[lang="de"] {
   gap: 1.6rem;
   margin: 0;
   padding: 0;
-  text-align: center;
-  direction: inherit; /* اصلاح شده */
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  direction: inherit;
+  user-select: none;
 }
 
 .main-nav ul li a {
   color: #d4af37;
   font-weight: 700;
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  letter-spacing: 0.04em;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 10px;
-  transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
-  font-size: clamp(0.9rem, 1vw, 1.1rem);
-  letter-spacing: 0.04em;
   text-shadow: 0 0 6px rgba(212, 175, 55, 0.6);
+  transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+  cursor: default;
 }
 
 .main-nav ul li a:hover,
@@ -102,8 +116,9 @@ html[lang="de"] {
   flex-direction: row;
   gap: 1rem;
   margin-left: auto;
-  direction: ltr !important;
   flex-wrap: nowrap;
+  direction: ltr !important;
+  user-select: none;
 }
 
 .lang-btn {
@@ -112,16 +127,16 @@ html[lang="de"] {
   color: #d4af37;
   padding: 0.4rem 1.1rem;
   border-radius: 12px;
-  cursor: pointer;
   font-weight: 700;
   font-size: clamp(0.9rem, 1vw, 1.1rem);
-  transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
   min-width: 48px;
   text-align: center;
-  user-select: none;
   letter-spacing: 0.03em;
-  order: 0;
   text-shadow: 0 0 6px rgba(212, 175, 55, 0.8);
+  order: 0;
+  transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+  user-select: none;
 }
 
 .lang-btn[data-lang="en"] { order: 1; }
@@ -142,16 +157,17 @@ html[lang="de"] {
   box-shadow: 0 0 14px rgba(245, 166, 35, 0.5);
 }
 
-/* ===== Main content area ===== */
+/* ===== Main content ===== */
 main {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1.8rem;
   flex-grow: 1;
   text-align: center;
+  user-select: text;
 }
 
-/* متن پاراگراف و محتوای بدنه باید start تراز شود */
+/* متن پاراگراف و محتوای پروژه */
 p,
 .project-body p {
   font-size: 1.2rem;
@@ -159,9 +175,10 @@ p,
   margin-bottom: 2rem;
   line-height: 1.5;
   text-align: start;
-  overflow-wrap: break-word; /* اضافه شده */
+  overflow-wrap: break-word;
 }
 
+/* تیتر اصلی */
 h1 {
   font-size: clamp(2rem, 4vw, 2.8rem);
   color: #d4af37;
@@ -191,6 +208,7 @@ h1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
 }
+
 #profileSmall:hover {
   transform: scale(1.05);
   box-shadow: 0 0 75px #f5a623;
@@ -213,8 +231,7 @@ h1 {
   flex-direction: column;
   text-align: start;
   transition: transform 0.25s ease;
-  /* اگر کل کارت کلیک‌خور هست، uncomment کن */
-  /* cursor: pointer; */
+  /* cursor: pointer; اگر لازم بود کل کارت کلیک‌خور باشد */
 }
 
 .project-card:hover {
@@ -311,47 +328,49 @@ h1 {
 
 /* ===== Footer ===== */
 .site-footer {
-  background: rgba(30, 30, 30, 0.75);
-  backdrop-filter: blur(12px) saturate(180%);
-  color: #bfb27f;
-  font-size: clamp(0.8rem, 1vw, 0.95rem);
-  padding: 1rem 2rem;
-  user-select: none;
-  box-shadow: inset 0 3px 10px rgba(181, 149, 44, 0.3);
-  text-align: center;
-  direction: inherit;
-  unicode-bidi: isolate;
-  border-top: 2px solid #d4af37;
-  border-bottom: none;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 1rem 2rem;
+  font-size: clamp(0.8rem, 1vw, 0.95rem);
+  background: rgba(30, 30, 30, 0.75);
+  backdrop-filter: blur(12px) saturate(180%);
+  box-shadow: inset 0 3px 10px rgba(181, 149, 44, 0.3);
+  border-top: 2px solid #d4af37;
+  color: #bfb27f;
+  text-align: center;
+  direction: inherit;
+  unicode-bidi: isolate;
+  user-select: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .site-footer p {
   margin: 0;
   color: #a99651;
-  user-select: text;
-  text-align: center;
   font-size: inherit;
   letter-spacing: 0.03em;
   line-height: 1.6;
+  user-select: text;
+  text-align: center;
 }
 
 .site-footer a {
   color: #d4af37;
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
 .site-footer a:hover {
   color: #f5a623;
   text-shadow: 0 0 10px #f5a623;
 }
 
 /* ===== Responsive styles ===== */
+
+/* صفحه‌های کوچک تا 900px */
 @media (max-width: 900px) {
   main {
     padding: 1.5rem 1rem;
@@ -367,7 +386,7 @@ h1 {
   }
 }
 
-/* تغییر مهم اینجاست: ناوبری افقی در موبایل */
+/* موبایل زیر 600px: ناوبری افقی و ستون‌بندی ساده‌تر */
 @media (max-width: 600px) {
   .site-header {
     flex-direction: column;
@@ -385,19 +404,19 @@ h1 {
     height: 48px;
   }
 
-  /* ناوبری با جهت افقی */
   .main-nav ul {
-    flex-direction: row; /* ستون حذف شد، افقی */
+    flex-direction: row;
     gap: 1rem;
-    direction: inherit;
     width: 100%;
-    padding: 0 0.5rem; /* کمی padding برای فاصله */
+    padding: 0 0.5rem;
     margin: 0;
     align-items: center;
-    overflow-x: auto; /* اسکرول افقی فعال */
-    -webkit-overflow-scrolling: touch; /* نرم بودن اسکرول در iOS */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    direction: inherit;
   }
 
+  /* استایل اسکرول بار افقی */
   .main-nav ul::-webkit-scrollbar {
     height: 6px;
   }
@@ -407,20 +426,19 @@ h1 {
   }
 
   .main-nav ul li {
-    width: auto; /* عرض اتوماتیک */
-    flex: 0 0 auto; /* جلوگیری از کشیدگی */
+    width: auto;
+    flex: 0 0 auto;
   }
 
   .main-nav ul li a {
     display: inline-block;
-    width: auto; /* حذف عرض 100% */
+    width: auto;
     padding: 0.7rem 1rem;
     text-align: center;
     font-size: 1rem;
-    white-space: nowrap; /* جلوگیری از شکستن متن */
+    white-space: nowrap;
   }
 
-  /* زبان‌ها */
   .lang-switcher {
     margin-left: 0;
     justify-content: center;
@@ -431,5 +449,26 @@ h1 {
 
   main {
     padding: 1rem 1rem;
+  }
+}
+
+/* موبایل خیلی کوچک (کمتر از 400px) */
+@media (max-width: 400px) {
+  #profileSmall {
+    width: clamp(120px, 40vw, 180px);
+    height: clamp(120px, 40vw, 180px);
+  }
+
+  .main-nav ul {
+    gap: 0.6rem;
+  }
+
+  .main-nav ul li a {
+    font-size: clamp(0.8rem, 3vw, 0.9rem);
+    padding: 0.35rem 0.7rem;
+  }
+
+  .lang-switcher {
+    gap: 0.5rem;
   }
 }
