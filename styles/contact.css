@@ -95,14 +95,17 @@ html[lang="de"] {
   border-radius: 10px;
   text-shadow: 0 0 6px rgba(212,175,55,0.6);
   transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+  cursor: default;
 }
 
 .main-nav ul li a:hover,
-.main-nav ul li a:focus {
+.main-nav ul li a:focus,
+.main-nav ul li a.active {
   background-color: #f5a623;
   color: #121212;
   outline: none;
   box-shadow: 0 0 18px #f5a623;
+  cursor: pointer;
 }
 
 /* ===== Language Switcher ===== */
