@@ -1,160 +1,6 @@
-/* ===== Reset and base styles ===== */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* ===== Styles specific to index.html page ===== */
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212; /* زغال‌سنگی تیره */
-  color: #f0e6d2; /* کرم ملایم */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.6;
-  user-select: text;
-}
-
-/* ===== Direction and language based adjustments ===== */
-html[lang="fa"],
-html[lang="ar"] {
-  direction: rtl;
-  unicode-bidi: embed;
-}
-
-html[lang="en"],
-html[lang="de"] {
-  direction: ltr;
-  unicode-bidi: embed;
-}
-
-/* ===== Site header ===== */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 10000;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  background: linear-gradient(90deg, rgba(30, 30, 30, 0.9), rgba(60, 60, 60, 0.9));
-  backdrop-filter: blur(12px) saturate(180%);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-  border-bottom: 2px solid #d4af37;
-  user-select: none;
-  direction: ltr;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-
-.site-header:hover {
-  background: linear-gradient(90deg, rgba(30, 30, 30, 1), rgba(70, 70, 70, 1));
-}
-
-/* ===== Logo ===== */
-#logo {
-  height: 52px;
-  border-radius: 12px;
-  filter: drop-shadow(0 0 8px #d4af37);
-  cursor: pointer;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-#logo:hover {
-  transform: scale(1.12);
-  filter: drop-shadow(0 0 20px #f5a623);
-}
-
-/* ===== Main navigation ===== */
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.6rem;
-  margin: 0;
-  padding: 0;
-  direction: ltr;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  text-align: center;
-}
-
-.main-nav ul li a {
-  color: #d4af37;
-  font-weight: 700;
-  font-size: clamp(0.9rem, 1vw, 1.1rem);
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  text-shadow: 0 0 6px rgba(212, 175, 55, 0.6);
-  transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
-  cursor: default;
-}
-
-.main-nav ul li a:hover,
-.main-nav ul li a:focus,
-.main-nav ul li a.active {
-  background-color: #f5a623;
-  color: #121212;
-  outline: none;
-  box-shadow: 0 0 18px #f5a623;
-  cursor: pointer;
-}
-
-/* ===== Language switcher ===== */
-.lang-switcher {
-  display: inline-flex !important;
-  flex-direction: row;
-  gap: 1rem;
-  margin-left: auto;
-  direction: ltr !important;
-  flex-wrap: nowrap;
-}
-
-.lang-btn {
-  background: transparent;
-  border: 2.5px solid #d4af37;
-  color: #d4af37;
-  padding: 0.4rem 1.1rem;
-  border-radius: 12px;
-  font-weight: 700;
-  font-size: clamp(0.9rem, 1vw, 1.1rem);
-  cursor: pointer;
-  min-width: 48px;
-  text-align: center;
-  user-select: none;
-  letter-spacing: 0.03em;
-  text-shadow: 0 0 6px rgba(212, 175, 55, 0.8);
-  order: 0;
-  transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
-}
-.lang-btn[data-lang="en"] { order: 1; }
-.lang-btn[data-lang="fa"] { order: 2; }
-.lang-btn[data-lang="de"] { order: 3; }
-.lang-btn[data-lang="ar"] { order: 4; }
-
-.lang-btn[aria-pressed="true"] {
-  background-color: #f5a623;
-  color: #121212;
-  border-color: #f5a623;
-  box-shadow: 0 0 20px #f5a623;
-  text-shadow: none;
-}
-
-.lang-btn:hover:not([aria-pressed="true"]) {
-  background-color: rgba(245, 166, 35, 0.3);
-  box-shadow: 0 0 14px rgba(245, 166, 35, 0.5);
-}
-
-/* ===== Banner image ===== */
+/* اگر بنر یا هر بخش خاص صفحه اصلی داری، اینجا تعریف کن */
 .banner {
   width: 100%;
   height: 320px;
@@ -171,35 +17,7 @@ html[lang="de"] {
   filter: drop-shadow(0 0 35px #f5a623);
 }
 
-/* ===== Main content area ===== */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2.8rem 1.8rem;
-  flex-grow: 1;
-  text-align: center;
-  user-select: text;
-}
-
-h1 {
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  color: #d4af37;
-  text-shadow: 0 0 18px #b98f1b;
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.06em;
-  text-align: center;
-}
-
-p {
-  font-size: clamp(1rem, 1.5vw, 1.3rem);
-  color: #e9e4d4;
-  margin-bottom: 3rem;
-  line-height: 1.8;
-  text-align: start;
-  user-select: text;
-}
-
-/* ===== Profile photo ===== */
+/* اگر عکس پروفایل خاصی برای index داری */
 #profilePhoto {
   width: clamp(180px, 15vw, 270px);
   height: clamp(180px, 15vw, 270px);
@@ -215,77 +33,14 @@ p {
   box-shadow: 0 0 75px #f5a623;
 }
 
-/* ===== Footer ===== */
-.site-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1rem 2rem;
-  font-size: clamp(0.8rem, 1vw, 0.95rem);
-  background: rgba(30, 30, 30, 0.75);
-  backdrop-filter: blur(12px) saturate(180%);
-  box-shadow: inset 0 3px 10px rgba(181, 149, 44, 0.3);
-  border-top: 2px solid #d4af37;
-  color: #bfb27f;
-  text-align: center;
-  direction: inherit;
-  unicode-bidi: isolate;
-  user-select: none;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.site-footer p {
-  margin: 0;
-  color: #a99651;
-  font-size: inherit;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
-  user-select: text;
-  text-align: center;
-}
-
-.site-footer a {
-  color: #d4af37;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-.site-footer a:hover {
-  color: #f5a623;
-  text-shadow: 0 0 10px #f5a623;
-}
-
-/* ===== Responsive ===== */
+/* ===== Responsive adjustments for index page ===== */
 @media (max-width: 768px) {
-  .site-header {
-    padding: 1rem 1.2rem;
-  }
-  main {
-    max-width: 100%;
-    padding: 2rem 1rem;
-  }
   .banner {
     height: 220px;
   }
   #profilePhoto {
     width: clamp(150px, 30vw, 220px);
     height: clamp(150px, 30vw, 220px);
-  }
-  .main-nav ul {
-    gap: 1rem;
-  }
-  .main-nav ul li a {
-    font-size: clamp(0.85rem, 2vw, 1rem);
-    padding: 0.4rem 0.8rem;
-  }
-  .lang-switcher {
-    gap: 0.7rem;
-  }
-  .lang-btn {
-    padding: 0.35rem 0.9rem;
-    font-size: clamp(0.85rem, 2vw, 1rem);
-    min-width: 40px;
   }
 }
 
@@ -297,34 +52,4 @@ p {
     width: clamp(120px, 40vw, 180px);
     height: clamp(120px, 40vw, 180px);
   }
-  .main-nav ul {
-    gap: 0.6rem;
-  }
-  .main-nav ul li a {
-    font-size: clamp(0.8rem, 3vw, 0.9rem);
-    padding: 0.35rem 0.7rem;
-  }
-  .lang-switcher {
-    gap: 0.5rem;
-  }
-  .lang-btn {
-    padding: 0.3rem 0.8rem;
-    font-size: clamp(0.8rem, 3vw, 0.9rem);
-    min-width: 36px;
-  }
-}
-
-/* ===== Accessibility enhancements ===== */
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
-  outline: 3px solid #f5a623;
-  outline-offset: 2px;
-  outline-radius: 8px;
-}
-
-/* ===== Utility classes ===== */
-.text-center {
-  text-align: center;
 }
