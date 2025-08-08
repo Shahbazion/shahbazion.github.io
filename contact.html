@@ -87,18 +87,23 @@
       </div>
 
       <!-- Contact Form -->
-      <form action="send_message.php" method="POST" class="contact-form" aria-label="Contact form to send a message" novalidate>
-        <label for="name" data-i18n="contact.form.nameLabel">Full Name</label>
-        <input type="text" id="name" name="name" required placeholder="Your full name" autocomplete="name" />
+      <form action="https://formsubmit.co/saeed.shahbazi98@gmail.com" method="POST" class="contact-form" aria-label="Contact form to send a message" novalidate>
 
-        <label for="email" data-i18n="contact.form.emailLabel">Email Address</label>
-        <input type="email" id="email" name="email" required placeholder="your.email@example.com" autocomplete="email" />
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html" />
 
-        <label for="message" data-i18n="contact.form.messageLabel">Message</label>
-        <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" required placeholder="Your full name" autocomplete="name" />
 
-        <button type="submit" data-i18n="contact.form.submitBtn">Send Message</button>
-      </form>
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" required placeholder="your.email@example.com" autocomplete="email" />
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
     </section>
   </main>
 
