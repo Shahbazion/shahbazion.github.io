@@ -45,30 +45,48 @@
           <strong data-i18n="contact.emailLabel">Email:</strong>
           <a href="mailto:saeed.shahbazi98@gmail.com" tabindex="0">saeed.shahbazi98@gmail.com</a>
         </p>
-        <p>
-          <strong data-i18n="contact.phoneLabel">Phone:</strong>
-          <a href="tel:+989302809250" tabindex="0">+98 930 280 9250</a>
-        </p>
       </div>
 
-      <div class="footer-social" aria-label="Social Media Links">
-        <a href="https://www.instagram.com/shahbazion" target="_blank" rel="noopener" aria-label="Instagram">
+      <!-- Redesigned Social Media Links -->
+      <div class="social-grid" aria-label="Social Media Links">
+        <a href="https://www.instagram.com/shahbazion" target="_blank" rel="noopener" 
+           aria-label="Instagram" class="social-card instagram">
           <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
         </a>
-        <a href="https://t.me/shahbazion" target="_blank" rel="noopener" aria-label="Telegram">
+
+        <a href="https://t.me/shahbazion" target="_blank" rel="noopener" 
+           aria-label="Telegram" class="social-card telegram">
           <i class="fab fa-telegram"></i>
+          <span>Telegram</span>
         </a>
-        <a href="https://www.linkedin.com/in/shahbazion" target="_blank" rel="noopener" aria-label="LinkedIn">
+
+        <a href="https://www.linkedin.com/in/shahbazion" target="_blank" rel="noopener" 
+           aria-label="LinkedIn" class="social-card linkedin">
           <i class="fab fa-linkedin-in"></i>
+          <span>LinkedIn</span>
         </a>
-        <a href="https://github.com/shahbazion" target="_blank" rel="noopener" aria-label="GitHub">
+
+        <a href="https://github.com/shahbazion" target="_blank" rel="noopener" 
+           aria-label="GitHub" class="social-card github">
           <i class="fab fa-github"></i>
+          <span>GitHub</span>
         </a>
-        <a href="https://wa.me/989302809250" target="_blank" rel="noopener" aria-label="WhatsApp">
+
+        <a href="https://wa.me/989302809250" target="_blank" rel="noopener" 
+           aria-label="WhatsApp" class="social-card whatsapp">
           <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+
+        <a href="https://laborx.com/customers/users/id368904?ref=368904" target="_blank" rel="noopener" 
+           aria-label="LaborX" class="social-card laborx">
+          <i class="fas fa-briefcase"></i>
+          <span>LaborX</span>
         </a>
       </div>
 
+      <!-- Contact Form -->
       <form action="send_message.php" method="POST" class="contact-form" aria-label="Contact form to send a message" novalidate>
         <label for="name" data-i18n="contact.form.nameLabel">Full Name</label>
         <input type="text" id="name" name="name" required placeholder="Your full name" autocomplete="name" />
