@@ -26,12 +26,14 @@ html[lang="fa"],
 html[lang="ar"] {
   direction: rtl;
   unicode-bidi: embed;
+    text-align: right;
 }
 
 html[lang="en"],
 html[lang="de"] {
   direction: ltr;
   unicode-bidi: embed;
+    text-align: left;
 }
 
 /* ===== Site header ===== */

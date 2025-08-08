@@ -26,12 +26,14 @@ html[lang="fa"],
 html[lang="ar"] {
   direction: rtl;
   unicode-bidi: embed;
+    text-align: right;
 }
 
 html[lang="en"],
 html[lang="de"] {
   direction: ltr;
   unicode-bidi: embed;
+    text-align: left;
 }
 
 /* ===== Site header ===== */
@@ -49,7 +51,7 @@ html[lang="de"] {
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
   border-bottom: 2px solid #d4af37;
   text-align: center;
-  direction: inherit;
+  direction: ltr;
   transition: background-color 0.3s ease;
   user-select: none;
 }
@@ -83,7 +85,7 @@ html[lang="de"] {
   align-items: center;
   justify-content: center;
   text-align: center;
-  direction: inherit;
+  direction: ltr;
   user-select: none;
 }
 
