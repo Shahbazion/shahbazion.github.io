@@ -367,6 +367,7 @@ h1 {
   }
 }
 
+/* تغییر مهم اینجاست: ناوبری افقی در موبایل */
 @media (max-width: 600px) {
   .site-header {
     flex-direction: column;
@@ -384,28 +385,42 @@ h1 {
     height: 48px;
   }
 
+  /* ناوبری با جهت افقی */
   .main-nav ul {
-    flex-direction: column;
+    flex-direction: row; /* ستون حذف شد، افقی */
     gap: 1rem;
-    direction: inherit; /* اصلاح شده */
+    direction: inherit;
     width: 100%;
-    padding: 0;
+    padding: 0 0.5rem; /* کمی padding برای فاصله */
     margin: 0;
     align-items: center;
+    overflow-x: auto; /* اسکرول افقی فعال */
+    -webkit-overflow-scrolling: touch; /* نرم بودن اسکرول در iOS */
+  }
+
+  .main-nav ul::-webkit-scrollbar {
+    height: 6px;
+  }
+  .main-nav ul::-webkit-scrollbar-thumb {
+    background-color: #d4af37aa;
+    border-radius: 12px;
   }
 
   .main-nav ul li {
-    width: 100%;
+    width: auto; /* عرض اتوماتیک */
+    flex: 0 0 auto; /* جلوگیری از کشیدگی */
   }
 
   .main-nav ul li a {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: auto; /* حذف عرض 100% */
     padding: 0.7rem 1rem;
     text-align: center;
     font-size: 1rem;
+    white-space: nowrap; /* جلوگیری از شکستن متن */
   }
 
+  /* زبان‌ها */
   .lang-switcher {
     margin-left: 0;
     justify-content: center;
