@@ -19,11 +19,11 @@
       <img src="images/logo.png" alt="Saeed AliShahbazi Logo" id="logo" loading="lazy" />
     </a>
 
-    <nav role="navigation" class="main-nav">
+    <nav role="navigation" aria-label="Main navigation" class="main-nav">
       <ul>
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li><a href="about.html" data-i18n="nav.about">About Me</a></li>
-        <li><a href="projects.html" data-i18n="nav.projects" class="active">Projects</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects" class="active" aria-current="page">Projects</a></li>
         <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
@@ -37,31 +37,31 @@
   </header>
 
   <main id="content" role="main" tabindex="-1">
-    <section class="projects-section">
+    <section class="projects-section" aria-label="Projects list">
       <h1 data-i18n="projects.heading">My Projects</h1>
 
       <div class="profile-row" aria-hidden="false">
-        <img src="images/projects.png" alt="Saeed AliShahbazi" id="profileSmall" loading="lazy" />
+        <img src="images/projects.png" alt="Saeed AliShahbazi profile" id="profileSmall" loading="lazy" />
         <p data-i18n="projects.intro">Selected projects mostly focused on backend engineering, APIs, and freelance-ready solutions.</p>
       </div>
 
       <div class="projects-grid">
 
-        <!-- Dr. Rezvani project -->
-        <article class="project-card" id="proj-dr-rezvani">
+        <!-- Dr. Rezvani Veterinary Clinic -->
+        <article class="project-card" id="proj-dr-rezvani" aria-labelledby="proj-dr-rezvani-title">
           <header class="project-header">
-            <h2 data-i18n="projects.drrezvani.title">Dr. Rezvani Veterinary Clinic</h2>
+            <h2 id="proj-dr-rezvani-title" data-i18n="projects.drrezvani.title">Dr. Rezvani Veterinary Clinic</h2>
             <p class="project-tag" data-i18n="projects.tag.client">Client project · Live site</p>
           </header>
 
-          <img src="images/dr-rezvani-screenshot.png" alt="Dr. Rezvani Veterinary Clinic preview" class="project-img" loading="lazy" />
+          <img src="images/dr-rezvani-screenshot.png" alt="Screenshot of Dr. Rezvani Veterinary Clinic website" class="project-img" loading="lazy" />
 
           <div class="project-body">
             <p data-i18n="projects.drrezvani.description">
               Implemented full website and appointment/contact backend for a veterinary clinic. Deployed to cPanel (shared hosting). Lightweight, SEO-friendly static pages plus dynamic forms.
             </p>
 
-            <ul class="tech-stack" aria-label="Technologies used">
+            <ul class="tech-stack" aria-label="Technologies used in Dr. Rezvani project">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript (f18i.js + i18n JSON)</li>
@@ -70,8 +70,8 @@
             </ul>
 
             <div class="project-links">
-              <a class="btn-live" href="https://www.dr-rezvani-vet.ir" target="_blank" rel="noopener" data-i18n="projects.live">Live Demo</a>
-              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+              <a class="btn-live" href="https://www.dr-rezvani-vet.ir" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">Live Demo</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
             </div>
 
             <details class="project-notes">
@@ -86,18 +86,18 @@
           </div>
         </article>
 
-        <!-- User Management & Auth API -->
-        <article class="project-card" id="proj-userapi">
+        <!-- Secure User Management & Authentication API -->
+        <article class="project-card" id="proj-userapi" aria-labelledby="proj-userapi-title">
           <header class="project-header">
-            <h2 data-i18n="projects.userapi.title">Secure User Management & Authentication API (JWT + OAuth2)</h2>
+            <h2 id="proj-userapi-title" data-i18n="projects.userapi.title">Secure User Management & Authentication API (JWT + OAuth2)</h2>
           </header>
 
-          <img src="images/icon.png" alt="User Management API preview" class="project-img" loading="lazy" />
+          <img src="images/icon.png" alt="User Management API icon" class="project-img" loading="lazy" />
 
           <div class="project-body">
             <p data-i18n="projects.userapi.description">Built a RESTful API with signup, login, password recovery, roles, and permissions.</p>
 
-            <ul class="tech-stack">
+            <ul class="tech-stack" aria-label="Technologies used in User Management API">
               <li>Node.js</li>
               <li>Express</li>
               <li>MongoDB</li>
@@ -106,8 +106,8 @@
             </ul>
 
             <div class="project-links">
-              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
-              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+              <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
             </div>
 
             <details class="project-notes">
@@ -122,18 +122,18 @@
           </div>
         </article>
 
-        <!-- Crypto Payment System -->
-        <article class="project-card" id="proj-crypto">
+        <!-- Cryptocurrency Payment and Transaction Management System -->
+        <article class="project-card" id="proj-crypto" aria-labelledby="proj-crypto-title">
           <header class="project-header">
-            <h2 data-i18n="projects.crypto.title">Cryptocurrency Payment and Transaction Management System (USDT, Bitcoin, Ethereum)</h2>
+            <h2 id="proj-crypto-title" data-i18n="projects.crypto.title">Cryptocurrency Payment and Transaction Management System (USDT, Bitcoin, Ethereum)</h2>
           </header>
 
-          <img src="images/icon.png" alt="Crypto Payment System preview" class="project-img" loading="lazy" />
+          <img src="images/icon.png" alt="Cryptocurrency Payment System icon" class="project-img" loading="lazy" />
 
           <div class="project-body">
             <p data-i18n="projects.crypto.description">API to accept, verify, and record payments with webhook and strong security.</p>
 
-            <ul class="tech-stack">
+            <ul class="tech-stack" aria-label="Technologies used in Crypto Payment System">
               <li>Node.js</li>
               <li>Express</li>
               <li>MongoDB</li>
@@ -141,8 +141,8 @@
             </ul>
 
             <div class="project-links">
-              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
-              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+              <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
             </div>
 
             <details class="project-notes">
@@ -157,18 +157,18 @@
           </div>
         </article>
 
-        <!-- Appointment Booking System -->
-        <article class="project-card" id="proj-booking">
+        <!-- Online Appointment Booking System -->
+        <article class="project-card" id="proj-booking" aria-labelledby="proj-booking-title">
           <header class="project-header">
-            <h2 data-i18n="projects.booking.title">Online Appointment Booking System</h2>
+            <h2 id="proj-booking-title" data-i18n="projects.booking.title">Online Appointment Booking System</h2>
           </header>
 
-          <img src="images/icon.png" alt="Appointment Booking System preview" class="project-img" loading="lazy" />
+          <img src="images/icon.png" alt="Appointment Booking System icon" class="project-img" loading="lazy" />
 
           <div class="project-body">
             <p data-i18n="projects.booking.description">Suitable for clinics, beauty salons, educational centers, and more.</p>
 
-            <ul class="tech-stack">
+            <ul class="tech-stack" aria-label="Technologies used in Appointment Booking System">
               <li>PHP</li>
               <li>MySQL</li>
               <li>REST API</li>
@@ -176,8 +176,8 @@
             </ul>
 
             <div class="project-links">
-              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
-              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+              <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
             </div>
 
             <details class="project-notes">
@@ -192,18 +192,18 @@
           </div>
         </article>
 
-        <!-- Inventory + Orders Panel -->
-        <article class="project-card" id="proj-inventory">
+        <!-- Inventory and Orders Management Panel -->
+        <article class="project-card" id="proj-inventory" aria-labelledby="proj-inventory-title">
           <header class="project-header">
-            <h2 data-i18n="projects.inventory.title">Inventory and Orders Management Panel</h2>
+            <h2 id="proj-inventory-title" data-i18n="projects.inventory.title">Inventory and Orders Management Panel</h2>
           </header>
 
-          <img src="images/icon.png" alt="Inventory & Orders Panel preview" class="project-img" loading="lazy" />
+          <img src="images/icon.png" alt="Inventory & Orders Panel icon" class="project-img" loading="lazy" />
 
           <div class="project-body">
             <p data-i18n="projects.inventory.description">Multi-user support, reporting, and REST API for frontend integration.</p>
 
-            <ul class="tech-stack">
+            <ul class="tech-stack" aria-label="Technologies used in Inventory and Orders Panel">
               <li>Node.js</li>
               <li>Express</li>
               <li>PostgreSQL</li>
@@ -212,8 +212,8 @@
             </ul>
 
             <div class="project-links">
-              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
-              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+              <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
             </div>
 
             <details class="project-notes">
@@ -228,18 +228,18 @@
           </div>
         </article>
 
-        <!-- Real-time Chat Backend -->
-        <article class="project-card" id="proj-chat">
+        <!-- Real-time Chat Backend Service -->
+        <article class="project-card" id="proj-chat" aria-labelledby="proj-chat-title">
           <header class="project-header">
-            <h2 data-i18n="projects.chat.title">Real-time Chat Backend Service</h2>
+            <h2 id="proj-chat-title" data-i18n="projects.chat.title">Real-time Chat Backend Service</h2>
           </header>
 
-          <img src="images/icon.png" alt="Real-time Chat Backend preview" class="project-img" loading="lazy" />
+          <img src="images/icon.png" alt="Real-time Chat Backend icon" class="project-img" loading="lazy" />
 
           <div class="project-body">
             <p data-i18n="projects.chat.description">Built with WebSocket, Redis Pub/Sub, or Socket.io technologies.</p>
 
-            <ul class="tech-stack">
+            <ul class="tech-stack" aria-label="Technologies used in Real-time Chat Backend">
               <li>Node.js</li>
               <li>Socket.io</li>
               <li>Redis</li>
@@ -247,8 +247,8 @@
             </ul>
 
             <div class="project-links">
-              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
-              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+              <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
             </div>
 
             <details class="project-notes">
@@ -263,18 +263,18 @@
           </div>
         </article>
 
-        <!-- Task Scheduler + Retry -->
-        <article class="project-card" id="proj-tasks">
+        <!-- Background Task Scheduler and Retry System -->
+        <article class="project-card" id="proj-tasks" aria-labelledby="proj-tasks-title">
           <header class="project-header">
-            <h2 data-i18n="projects.tasks.title">Background Task Scheduler and Retry System</h2>
+            <h2 id="proj-tasks-title" data-i18n="projects.tasks.title">Background Task Scheduler and Retry System</h2>
           </header>
 
-          <img src="images/icon.png" alt="Task Scheduler Microservice preview" class="project-img" loading="lazy" />
+          <img src="images/icon.png" alt="Task Scheduler Microservice icon" class="project-img" loading="lazy" />
 
           <div class="project-body">
             <p data-i18n="projects.tasks.description">Built microservice for asynchronous processing with Redis Queue or Celery.</p>
 
-            <ul class="tech-stack">
+            <ul class="tech-stack" aria-label="Technologies used in Task Scheduler System">
               <li>Python</li>
               <li>FastAPI</li>
               <li>Redis (RQ / Celery)</li>
@@ -282,8 +282,8 @@
             </ul>
 
             <div class="project-links">
-              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
-              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+              <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
             </div>
 
             <details class="project-notes">
@@ -298,18 +298,18 @@
           </div>
         </article>
 
-        <!-- i18n backend -->
-        <article class="project-card" id="proj-i18n">
+        <!-- Content Translation and Multilingual API -->
+        <article class="project-card" id="proj-i18n" aria-labelledby="proj-i18n-title">
           <header class="project-header">
-            <h2 data-i18n="projects.i18n.title">Content Translation and Multilingual API (i18n backend)</h2>
+            <h2 id="proj-i18n-title" data-i18n="projects.i18n.title">Content Translation and Multilingual API (i18n backend)</h2>
           </header>
 
-          <img src="images/icon.png" alt="i18n Backend API preview" class="project-img" loading="lazy" />
+          <img src="images/icon.png" alt="i18n Backend API icon" class="project-img" loading="lazy" />
 
           <div class="project-body">
             <p data-i18n="projects.i18n.description">Manages languages, translations, and delivers content via API.</p>
 
-            <ul class="tech-stack">
+            <ul class="tech-stack" aria-label="Technologies used in i18n Backend API">
               <li>Node.js</li>
               <li>Express</li>
               <li>MongoDB</li>
@@ -317,8 +317,8 @@
             </ul>
 
             <div class="project-links">
-              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
-              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+              <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
             </div>
 
             <details class="project-notes">
@@ -333,18 +333,18 @@
           </div>
         </article>
 
-        <!-- Cloud File Storage -->
-        <article class="project-card" id="proj-cloudstorage">
+        <!-- Cloud File Storage and Management Service -->
+        <article class="project-card" id="proj-cloudstorage" aria-labelledby="proj-cloudstorage-title">
           <header class="project-header">
-            <h2 data-i18n="projects.cloudstorage.title">Cloud File Storage and Management Service (File Upload & CDN integration)</h2>
+            <h2 id="proj-cloudstorage-title" data-i18n="projects.cloudstorage.title">Cloud File Storage and Management Service (File Upload & CDN integration)</h2>
           </header>
 
-          <img src="images/icon.png" alt="Cloud File Storage Service preview" class="project-img" loading="lazy" />
+          <img src="images/icon.png" alt="Cloud File Storage Service icon" class="project-img" loading="lazy" />
 
           <div class="project-body">
             <p data-i18n="projects.cloudstorage.description">File upload, processing, and secure access management.</p>
 
-            <ul class="tech-stack">
+            <ul class="tech-stack" aria-label="Technologies used in Cloud File Storage Service">
               <li>Node.js</li>
               <li>Express</li>
               <li>AWS S3</li>
@@ -352,8 +352,8 @@
             </ul>
 
             <div class="project-links">
-              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
-              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+              <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
             </div>
 
             <details class="project-notes">
@@ -368,18 +368,18 @@
           </div>
         </article>
 
-        <!-- Logging + Monitoring API -->
-        <article class="project-card" id="proj-logging">
+        <!-- Logging and Monitoring API System -->
+        <article class="project-card" id="proj-logging" aria-labelledby="proj-logging-title">
           <header class="project-header">
-            <h2 data-i18n="projects.logging.title">Logging and Monitoring API System</h2>
+            <h2 id="proj-logging-title" data-i18n="projects.logging.title">Logging and Monitoring API System</h2>
           </header>
 
-          <img src="images/icon.png" alt="Logging and Monitoring API preview" class="project-img" loading="lazy" />
+          <img src="images/icon.png" alt="Logging and Monitoring API icon" class="project-img" loading="lazy" />
 
           <div class="project-body">
             <p data-i18n="projects.logging.description">For large projects requiring monitoring and alerting.</p>
 
-            <ul class="tech-stack">
+            <ul class="tech-stack" aria-label="Technologies used in Logging and Monitoring API System">
               <li>Node.js</li>
               <li>Express</li>
               <li>Elastic Stack</li>
@@ -387,8 +387,8 @@
             </ul>
 
             <div class="project-links">
-              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
-              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+              <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
             </div>
 
             <details class="project-notes">
@@ -403,18 +403,18 @@
           </div>
         </article>
 
-        <!-- Analytics backend -->
-        <article class="project-card" id="proj-analytics">
+        <!-- User Analytics and Reporting API Backend -->
+        <article class="project-card" id="proj-analytics" aria-labelledby="proj-analytics-title">
           <header class="project-header">
-            <h2 data-i18n="projects.analytics.title">User Analytics and Reporting API Backend</h2>
+            <h2 id="proj-analytics-title" data-i18n="projects.analytics.title">User Analytics and Reporting API Backend</h2>
           </header>
 
-          <img src="images/icon.png" alt="Analytics API preview" class="project-img" loading="lazy" />
+          <img src="images/icon.png" alt="Analytics API icon" class="project-img" loading="lazy" />
 
           <div class="project-body">
             <p data-i18n="projects.analytics.description">Collects input data and provides various statistics and reports.</p>
 
-            <ul class="tech-stack">
+            <ul class="tech-stack" aria-label="Technologies used in Analytics API Backend">
               <li>Python</li>
               <li>FastAPI</li>
               <li>PostgreSQL</li>
@@ -422,8 +422,8 @@
             </ul>
 
             <div class="project-links">
-              <a class="btn-live" href="#" target="_blank" rel="noopener" data-i18n="projects.docs">Docs</a>
-              <a class="btn-github" href="#" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+              <a class="btn-live" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.docs">Docs</a>
+              <a class="btn-github" href="#" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
             </div>
 
             <details class="project-notes">
