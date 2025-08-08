@@ -60,6 +60,7 @@ html[lang="de"] {
   filter: drop-shadow(0 0 20px #f5a623);
 }
 
+
 /* ===== Main navigation ===== */
 .main-nav ul {
   list-style: none;
@@ -75,7 +76,7 @@ html[lang="de"] {
 }
 
 .main-nav ul li a {
-  color: #d4af37; /* طلایی مات */
+  color: #d4af37;
   font-weight: 700;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -86,17 +87,14 @@ html[lang="de"] {
   text-shadow: 0 0 6px rgba(212, 175, 55, 0.6);
 }
 
-/* هاور، فوکوس و فعال */
 .main-nav ul li a:hover,
 .main-nav ul li a:focus,
 .main-nav ul li a.active {
-  background-color: #f5a623; /* طلایی روشن */
+  background-color: #f5a623;
   color: #121212;
   outline: none;
   box-shadow: 0 0 18px #f5a623;
-  cursor: pointer;
 }
-
 
 /* ===== Language switcher ===== */
 .lang-switcher {
@@ -261,47 +259,5 @@ p {
 
   .site-footer p {
     font-size: 0.85rem;
-  }
-}
-
-/* ===== Responsive Header & Navigation for Mobile ===== */
-@media (max-width: 768px) {
-  .site-header {
-    padding: 1rem 1rem;
-    justify-content: center;
-    gap: 1rem;
-    direction: inherit; /* جهت‌بندی هماهنگ با زبان */
-  }
-
-  #logo {
-    height: 48px; /* کمی کوچکتر برای موبایل */
-    flex-shrink: 0;
-  }
-
-  .main-nav ul {
-    flex-wrap: wrap; /* اجازه شکستن منو به چند خط */
-    justify-content: center;
-    gap: 0.8rem;
-    direction: inherit; /* جهت‌بندی با زبان */
-  }
-
-  .main-nav ul li a {
-    font-size: 1rem;
-    padding: 0.5rem 0.9rem;
-    white-space: normal; /* اجازه بشکنه */
-  }
-
-  .lang-switcher {
-    margin-left: 0;
-    margin-top: 0.5rem;
-    justify-content: center;
-    width: 100%;
-    gap: 0.6rem;
-  }
-
-  .lang-btn {
-    padding: 0.4rem 0.9rem;
-    font-size: 1rem;
-    min-width: 40px;
   }
 }
